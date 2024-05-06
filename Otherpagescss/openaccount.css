@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-image: url('../SecondPage/images/openaccountbackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0;
+    z-index: 1;
+}
+.body svg{
+    margin-left: 90%;
+    margin-top: 30px;
+    height: 100px;
+    position: relative;
+    margin-right: 10px;
+}
+.body .text{
+    width: 50%;
+    min-height: 30%;
+    margin-left: 50%;
+}
+.body .text h1{
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.863);
+    width: 60%;
+    font-size: 2.5em;
+    font-family: acumin-pro,sans-serif;
+    margin-top: 120px;
+    font-weight: 600;
+}
+.body .text p{
+    color: rgba(255, 255, 255, 0.642);
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    width: 80%;
+    margin-top: 20px;
+    font-size: 1em;
+}
+.getstarted{
+    width: 50%;
+    margin-left: 50%;
+    min-height: 30%;
+    margin-top: 20px;
+}
+.getstarted h1{
+    color: #dd4f05;
+    padding: 5px;
+    font-family: acumin-pro,sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.getstarted p{
+    color: rgba(255, 255, 255, 0.863);
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    width: 80%;
+    margin-top: 5px;
+}
+.getstarted .selectcontainer{
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.getstarted .selectcontainer div{
+    border: thin solid white;
+    width: 40%;
+    height: 130px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.642);
+    font-family: acumin-pro,sans-serif;
+}
+.getstarted .selectcontainer div{
+    background-color: #dd4f05;
+    cursor: pointer;
+    
+}
+
+.getstarted .selectcontainer div div{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    border: none;
+    margin-top: 20px;
+}
+.getstarted .selectcontainer div div img{
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.getstarted .selectcontainer div p{
+    color: rgba(255, 255, 255, 0.642);
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* ----mediaquery----- */
+@media (max-width: 997px){
+    .cover{
+        opacity: .5;
+    }
+    .body .text{
+        width: 80%;
+        margin: auto;
+        color: white;
+    }
+    .getstarted{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width: 768px){
+    .body .text{
+        width: 95%;
+    }
+    .getstarted{
+        width: 95%;
+    }
+    .body svg{
+        margin-left: 80%;
+        height: 100px;
+    }
+    .getstarted .selectcontainer{
+        width: 100%;
+        padding: 20px;
+    }
+}
+@media (max-width: 565px){
+    .body svg{
+        margin-left: 60%;
+    }
+}
+@media (max-width: 320px){
+    .body svg{
+        margin-left: 60%;
+        height: 100px;
+    }
+    .body .text h1{
+        width: 100%;
+        color: white;
+    }
+    .body .text p{
+        color: rgba(255, 255, 255, 0.863);
+    }
+    .getstarted h1{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .getstarted .selectcontainer {
+        width: 100%;
+        padding: 20px;
+    }
+}

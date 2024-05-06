@@ -1,0 +1,1671 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.alert{
+    min-height: 150px;
+    width: 100%;
+    background-color: rgba(255, 140, 140, 0.089);
+}
+.alert h1{
+    color: #dd4f05;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: acumin-pro,sans-serif;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 30px;
+}
+.alert p{
+    font-family: acumin-pro,sans-serif;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #696f73;
+    font-weight: 400;
+}
+
+/* -header- */
+
+.header1{
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #dd4f05;
+    display: flex;
+}
+.px768{
+    display: none;
+}
+.hiddenpersonal{
+    display: none;
+}
+.header1 nav{
+    background-color: #dd4f05;
+    height: 100%;
+    width: 600px;
+}
+.header1 nav .headerlinkdiv{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.header1 nav .headerlinkdiv .countrybuttondiv a button{
+    width: 60px;
+    height: 25px;
+    border-radius: 20px;
+    opacity: .9;
+    border: none;
+}
+.header1 nav .headerlinkdiv .countrybuttondiv a button .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(../images/istockphoto-652740802-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+.header1 nav .headerlinkdiv .countrybuttondiv a button .circle span{
+    margin-left: 20px;
+}
+.header1 nav .headerlinkdiv a{
+    color: #fae5da;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: acumin-pro,sans-serif;
+    text-decoration: none;
+}
+.header1 a{
+    text-decoration: none;
+}
+.header1 a .skew-et{
+    width: 250px;
+    height: 49px;
+    margin-left: -30px;
+    background-color: #ab3d04;
+    transform: skewX(-27deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.header1 a .skew-et:hover{
+    background-color: #8b2e00;
+}
+.header1 a .skew-et div{
+    transform: skewX(27deg);
+    font-size: 14px;
+    color: #fae5da;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: acumin-pro,sans-serif;
+    display: flex;
+    align-items: center;
+}
+.header1 a .skew-et div span{
+    margin-left: 10px;
+}
+
+.header2{
+    width: 100%;
+    height: 100px;
+}
+.header2 nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.header2 nav ul{
+    height: 100px;
+    width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    list-style-type: none;
+}
+.header2 nav ul li{
+    padding-bottom: 30px;
+    margin-top: 40px;
+}
+.header2 nav ul li a{
+    font-family: acumin-pro,sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #5e5e5e;
+    text-align: left;
+    background-color: transparent;
+    text-decoration: none;
+    padding-left: 35px;
+}
+.header2 nav ul li:nth-of-type(1){
+    margin-left: 75px;
+}
+.header2 nav ul li:nth-of-type(1):hover{
+    border: none;
+}
+.header2 nav ul li:hover{
+    border-bottom: medium solid #dd4f05;
+}
+.header2 nav ul li a:hover{
+    color: #dd4f05;
+}
+.header2 nav img{
+    margin-left: 250px;
+    margin-top: -30px;
+    height: 100px;
+    width: 100px;
+}
+header nav ul .personal a{
+    color: #dd4f05;
+}
+.personaldropdowncont{
+    height: 600px;
+    width: 800px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
+    display: flex;
+    position: absolute;
+    margin-top: 33px;
+    visibility: hidden;
+    z-index: 1;
+}
+.personaldropdowncont .items{
+    height: 100%;
+    width: 35%;
+    background-color: white;
+}
+.personaldropdowncont .itemsitems{
+    width: 65%;
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+}
+.personaldropdowncont .items div{
+    width: 80%;
+    border-bottom: thin solid rgba(0, 0, 0, 0.315);
+    margin: auto;
+    font-family: acumin-pro,sans-serif;
+    color: #5e5e5e;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color: transparent;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+header nav ul .personal:hover .personaldropdowncont{
+    visibility: visible;
+}
+.personaldropdowncont .items div:hover{
+    background-color: #5e5e5e11;
+}
+
+.businessdropdowncont{
+    height: 600px;
+    width: 800px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
+    display: flex;
+    position: absolute;
+    margin-top: 33px;
+    visibility: hidden;
+    margin-left: -112px;
+    z-index: 1;
+}
+.businessdropdowncont .items{
+    height: 100%;
+    width: 35%;
+    background-color: white;
+}
+.businessdropdowncont .itemsitems{
+    width: 65%;
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+}
+.businessdropdowncont .items div{
+    width: 80%;
+    border-bottom: thin solid rgba(0, 0, 0, 0.315);
+    margin: auto;
+    font-family: acumin-pro,sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #5e5e5e;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+header nav ul .business:hover .businessdropdowncont{
+    visibility: visible;
+}
+.businessdropdowncont .items div:hover{
+    background-color: #5e5e5e11;
+}
+.aboutusdropdowncont{
+    height: 600px;
+    width: 800px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
+    display: flex;
+    position: absolute;
+    margin-top: 33px;
+    visibility: hidden;
+    margin-left: -224px;
+    z-index: 1;
+}
+.aboutusdropdowncont .items{
+    height: 100%;
+    width: 35%;
+    background-color: white;
+}
+.aboutusdropdowncont .itemsitems{
+    width: 65%;
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+}
+.aboutusdropdowncont .items div{
+    width: 80%;
+    border-bottom: thin solid rgba(0, 0, 0, 0.315);
+    margin: auto;
+    font-family: acumin-pro,sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #5e5e5e;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+header nav ul .aboutus:hover .aboutusdropdowncont{
+    visibility: visible;
+}
+.aboutusdropdowncont .items div:hover{
+    background-color: #5e5e5e11;
+}
+
+.investorsrelationdropdowncont{
+    height: 600px;
+    width: 800px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
+    display: flex;
+    position: absolute;
+    margin-top: 33px;
+    visibility: hidden;
+    margin-left: -333px;
+    z-index: 1;
+}
+.investorsrelationdropdowncont .items{
+    height: 100%;
+    width: 35%;
+    background-color: white;
+}
+.investorsrelationdropdowncont .itemsitems{
+    width: 65%;
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+}
+.investorsrelationdropdowncont .items div{
+    width: 80%;
+    border-bottom: thin solid rgba(0, 0, 0, 0.315);
+    margin: auto;
+    font-family: acumin-pro,sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #5e5e5e;
+    background-color: transparent;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
+    visibility: visible;
+}
+.investorsrelationdropdowncont .items div:hover{
+    background-color: #5e5e5e11;
+}
+
+/* ---main--- */
+
+.banner{
+    height: 500px;
+    width: 100%;
+    background-image: url(../SecondPage/images/personal-loans_1400x452.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+.banner .showmehow{
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 50%;
+    width: 35%;
+    margin-left: 100px;
+    font-family: acumin-pro,sans-serif;
+    color: #424a52;
+    padding-top: 40px;
+    position: absolute;
+}
+.banner .showmehow h1{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.banner .showmehow p{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 1.2;
+    font-weight: 550;
+    margin-top: 10px;
+    line-height: 25px;
+}
+.banner .showmehow a{
+    text-decoration: none;
+    width: 200px;
+}
+.banner .showmehow a button{
+    height: 60px;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: #dd4f05;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.banner .showmehow a button:hover{
+    cursor: pointer;
+    background-color: #ab3d04;
+}
+
+
+
+.whatareyouiterestedin{
+    width: 100%;
+    background-color: #f7f8f8;
+    min-height: 400px;
+    padding-top: 50px;
+}
+.wayii{
+    font-size: 1.3em;
+    font-family: acumin-pro,sans-serif;
+    color: #424a52;
+    padding-top: 50px;
+    background-color: #f7f8f8;
+    padding-left: 100px;
+}
+.whatareyouiterestedin .divcont{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.whatareyouiterestedin .divcont a{
+    height: 200px;
+    background-color: white;
+    width: 12%;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.316);
+    text-decoration: none;
+    color: #424a52;
+    font-family: acumin-pro,sans-serif;
+}
+.whatareyouiterestedin .divcont .card1{
+    margin-left: 100px;
+}
+.whatareyouiterestedin .divcont .card6{
+    margin-right: 100px;
+}
+.whatareyouiterestedin .divcont a div{
+    font-weight: 550;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.whatareyouiterestedin .divcont a:hover{
+    color: #dd4f05;
+}
+
+.hero{
+    min-height: 600px;
+    background-color: white;
+}
+.accountdiv{
+    width: 80%;
+    margin: auto;
+    min-height: 300px;
+    margin-top: 20px;
+    display: flex;
+    border-bottom: thin solid rgba(0, 0, 0, 0.186);
+    padding-bottom: 50px;
+}
+.accounth1{
+    min-height: 300px;
+    width: 33.3%;
+}
+.accountdiv .accounth1 h1{
+    font-family: acumin-pro,sans-serif;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.572);
+    margin-top: 40px;
+}
+.accountdiv .accounth1 p{
+    font-size: 1.2;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 25px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    margin-top: 20px;
+}
+.accountdiv .accounth1 button{
+    background-color: #dd4f05;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+}
+.accountdiv .accounth1 button:hover{
+    background-color: #ab3d04;
+}
+
+.accountlists{
+    min-height: 300px;
+    width: 33.3%;
+    margin-top: 50px;
+}
+.accountlists div{
+    height: 60px;
+    border: thin solid rgba(0, 0, 0, 0.483);
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 50px;
+    font-size: 16px;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    color: #dd4f05;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05);
+}
+.accountlists div:hover{
+    color: #ab3d04;
+    cursor: pointer;
+}
+.accountlists button{
+    display: none;
+}
+.accountimage{
+    width: 30%;
+    height: 200px;
+    background-image: url(../SecondPage/images/savings_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+
+.carddiv{
+    width: 80%;
+    margin: auto;
+    min-height: 300px;
+    margin-top: 20px;
+    display: flex;
+    border-bottom: thin solid rgba(0, 0, 0, 0.186);
+    padding-bottom: 50px;
+}
+.cardh1{
+    min-height: 300px;
+    width: 33.3%;
+}
+.carddiv .cardh1 h1{
+    font-family: acumin-pro,sans-serif;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.572);
+    margin-top: 40px;
+}
+.carddiv .cardh1 p{
+    font-size: 1.2;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 25px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    margin-top: 20px;
+}
+.carddiv .cardh1 button{
+    background-color: #dd4f05;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+}
+.carddiv .cardh1 button:hover{
+    background-color: #ab3d04;
+}
+
+.cardlists{
+    min-height: 300px;
+    width: 33.3%;
+    margin-top: 50px;
+}
+.cardlists div{
+    height: 60px;
+    border: thin solid rgba(0, 0, 0, 0.483);
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 50px;
+    font-size: 16px;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    color: #dd4f05;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05);
+}
+.cardlists div:hover{
+    color: #ab3d04;
+    cursor: pointer;
+}
+.cardlists button{
+    display: none;
+}
+.cardimage{
+    width: 30%;
+    height: 250px;
+    background-image: url(../SecondPage/images/placeholder-banner-17.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+
+.waystobankdiv{
+    width: 80%;
+    margin: auto;
+    min-height: 300px;
+    margin-top: 20px;
+    display: flex;
+    border-bottom: thin solid rgba(0, 0, 0, 0.186);
+    padding-bottom: 50px;
+}
+.waystobankh1{
+    min-height: 300px;
+    width: 33.3%;
+}
+.waystobankdiv .waystobankh1 h1{
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.572);
+    margin-top: 40px;
+    font-family: acumin-pro,sans-serif;
+}
+.waystobankdiv .waystobankh1 p{
+    font-size: 1.2;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 25px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    margin-top: 20px;
+}
+.waystobankdiv .waystobankh1 button{
+    background-color: #dd4f05;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+}
+.waystobankdiv .waystobankh1 button:hover{
+    background-color: #ab3d04;
+}
+
+.waystobanklists{
+    min-height: 300px;
+    width: 33.3%;
+    margin-top: 50px;
+}
+.waystobanklists div{
+    height: 60px;
+    border: thin solid rgba(0, 0, 0, 0.483);
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 50px;
+    font-size: 16px;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    color: #dd4f05;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05);
+}
+.waystobanklists div:hover{
+    color: #ab3d04;
+    cursor: pointer;
+}
+.waystobanklists button{
+    display: none;
+}
+.waystobankimage{
+    width: 30%;
+    height: 300px;
+    background-image: url(../SecondPage/images/placeholder-banner-20.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+.nrnservicesdiv{
+    width: 80%;
+    margin: auto;
+    min-height: 300px;
+    margin-top: 20px;
+    display: flex;
+    border-bottom: thin solid rgba(0, 0, 0, 0.186);
+    padding-bottom: 50px;
+}
+.nrnservicesh1{
+    min-height: 300px;
+    width: 33.3%;
+}
+.nrnservicesdiv .nrnservicesh1 h1{
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.572);
+    margin-top: 40px;
+    font-family: acumin-pro,sans-serif;
+}
+.nrnservicesdiv .nrnservicesh1 p{
+    font-size: 1.2;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 25px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    margin-top: 20px;
+}
+.nrnservicesdiv .nrnservicesh1 button{
+    background-color: #dd4f05;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+}
+.nrnservicesdiv .nrnservicesh1 button:hover{
+    background-color: #ab3d04;
+}
+
+.nrnserviceslists{
+    min-height: 300px;
+    width: 33.3%;
+    margin-top: 50px;
+}
+.nrnserviceslists div{
+    height: 60px;
+    border: thin solid rgba(0, 0, 0, 0.483);
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 50px;
+    font-size: 16px;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    color: #dd4f05;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05);
+}
+.nrnserviceslists div:hover{
+    color: #ab3d04;
+    cursor: pointer;
+}
+.nrnserviceslists button{
+    display: none;
+}
+.nrnservicesimage{
+    width: 30%;
+    height: 300px;
+    background-image: url(../SecondPage/images/NRN_690x630.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.privatebanking{
+    width: 100%;
+    min-height: 500px;
+    background-color: #f7f8f8;
+    display: flex;
+}
+.privatebanking .privatebankingtext{
+    width: 30%;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+.privatebanking .privatebankingtext h1{
+    font-size: 2em;
+    color: #696f73;
+    margin-top: 20px;
+    font-family: acumin-pro,sans-serif;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+.privatebanking .privatebankingtext p{
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 25px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+.privatebanking .privatebankingtext button{
+    background-color: #dd4f05;
+    padding: 10px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+.privatebankingimage{
+    height: 316px;
+    width: 50%;
+    margin-top: 120px;
+    background-image: url(../SecondPage/images/PrivateBanking_content-row.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.privatebanking .hidden{
+    background-color: #dd4f05;
+    padding: 10px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    visibility: hidden;
+}
+.moreproduct{
+    min-height: 600px;
+    background-color: white;
+}
+.moreproduct h1{
+    font-family: acumin-pro,sans-serif;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.572);
+    margin-top: 100px;
+    margin-left: 130px;
+}
+.moreproduct .cardcont{
+    display: flex;
+    min-height: 450px;
+}
+.moreproduct .cardcont div{
+    width: 25%;
+    min-height: 100px;
+    box-shadow: 5px 5px 50px 2px rgba(0, 0, 0, 0.093);
+    border: thin solid rgba(0, 0, 0, 0.323);
+    margin-top: 50px;
+    position: relative;
+}
+.moreproduct .cardcont div:nth-of-type(1){
+    margin-left: 140px;
+    padding: 40px;
+}
+.moreproduct .cardcont div:nth-of-type(1) ul{
+    list-style-type: none;
+}
+.moreproduct .cardcont div:nth-of-type(1) ul li{
+    color: #dd4f05;
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 25px;
+    font-family: acumin-pro,sans-serif;
+    margin-top: 15px;
+}
+.moreproduct .cardcont div:nth-of-type(1) button{
+    background-color: #dd4f05;
+    padding: 10px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    position: absolute;
+    top: 320px;
+    cursor: pointer;
+}
+.moreproduct .cardcont div:nth-of-type(1) ul li:hover{
+    color: #ab3d04;
+    cursor: pointer;
+}
+.moreproduct .cardcont div:nth-of-type(1) p{
+    font-size: 1.5em;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    margin-left: 20px;
+    display: inline;
+    color: #696f73;
+}
+.moreproduct .cardcont div:nth-of-type(1) svg{
+    height: 50px;
+    fill: #dd4f05;
+}
+.moreproduct .cardcont div:nth-of-type(1) button:hover{
+    background-color: #ab3d04;
+}
+.moreproduct .cardcont div:nth-of-type(2){
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 40px;
+}
+.moreproduct .cardcont div:nth-of-type(2) ul{
+    list-style-type: none;
+}
+.moreproduct .cardcont div:nth-of-type(2) ul li{
+    color: #dd4f05;
+    font-size: 1.2;
+    font-weight: 600;   
+    line-height: 25px;
+    font-family: acumin-pro,sans-serif;
+    margin-top: 15px;
+}
+.moreproduct .cardcont div:nth-of-type(2) button{
+    background-color: #dd4f05;
+    padding: 10px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    cursor: pointer;
+    position: absolute;
+    top: 320px;
+}
+.moreproduct .cardcont div:nth-of-type(2) button:hover{
+    background-color: #ab3d04;
+}
+
+.moreproduct .cardcont div:nth-of-type(2) ul li:hover{
+    color: #ab3d04;
+    cursor: pointer;
+}
+.moreproduct .cardcont div:nth-of-type(2) p{
+    font-size: 1.5em;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    margin-left: 20px;
+    display: inline;
+    color: #696f73;
+}
+.moreproduct .cardcont div:nth-of-type(2) svg{
+    height: 50px;
+    fill: #dd4f05;
+}
+.moreproduct .cardcont div:nth-of-type(3){
+    padding: 40px;
+}
+.moreproduct .cardcont div:nth-of-type(3) ul{
+    list-style-type: none;
+}
+.moreproduct .cardcont div:nth-of-type(3) ul li{
+    color: #dd4f05;
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 25px;
+    font-family: acumin-pro,sans-serif;
+    margin-top: 15px;
+}
+.moreproduct .cardcont div:nth-of-type(3) button{
+    background-color: #dd4f05;
+    padding: 10px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    cursor: pointer;
+    position: absolute;
+    top: 320px;
+}
+.moreproduct .cardcont div:nth-of-type(3) button:hover{
+    background-color: #ab3d04;
+}
+
+.moreproduct .cardcont div:nth-of-type(2) ul li:hover{
+    color: #ab3d04;
+    cursor: pointer;
+}
+.moreproduct .cardcont div:nth-of-type(3) p{
+    font-size: 1.5em;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    margin-left: 20px;
+    display: inline;
+    color: #696f73;
+}
+.moreproduct .cardcont div:nth-of-type(3) svg{
+    height: 50px;
+    fill: #dd4f05;
+}
+
+.icons{
+   
+    margin-top: 150px;
+    background-image: linear-gradient(white, #f7f8f8);
+    height: 150px;
+}
+.icons .svgcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}
+.icons .svgcont a{
+    height: 100px;
+    width: 120px;
+    text-decoration: none;
+    color: #696f73;
+    font-weight: 600;
+    font-family: acumin-pro,sans-serif;
+}
+.icons .svgcont a .svg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf0f2;
+}
+.icons .svgcont a div svg{
+    height: 34px;
+    margin: auto;
+}
+.icons .svgcont a:hover .svg{
+    background-color: #dd4f05;
+}
+.icons .svgcont a:hover div svg{
+    fill: white;
+}
+.svgsubtitle{
+    margin-top: 100px;
+    text-align: center;
+}
+#accordionFlushExample{
+    display: none;
+    font-family: acumin-pro,sans-serif;
+}
+footer{
+    min-height: 300px;
+}
+.footerlinks{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    justify-content: space-between;
+    border-bottom: thin solid rgba(0, 0, 0, 0.296);
+    margin-bottom: 20px;
+}
+.footerlinks ul{
+    list-style-type: none;
+    font-size: 1em;
+    color: #696f73;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.footerlinks ul li{
+    font-size: .8em;
+    font-weight: 100;
+    line-height: 1;
+    margin-top: 20px;
+}
+.footerlinks ul li:nth-of-type(1){
+    margin-top: 20px;
+}
+.footerlinks ul span{
+    display: none;
+}
+.footerlinks ul li:hover{
+    color: #dd4f05;
+    cursor: pointer;
+}
+.footercontactus{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    min-height: 100px;
+    margin: auto;
+    
+}
+div.numbers{
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 2.5;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.561);
+    flex-wrap: wrap;
+    display: flex;
+    width: 90%;
+}
+.footercontactus span{
+    display: none;
+}
+.footercontactus p{
+    margin-left: 40px;
+}
+.footercontactus p:nth-of-type(6){
+    margin-left: 70px;
+}
+.copyright{
+    width: 100%;
+    min-height: 100px;
+    background-color: #434a51;
+    color: rgba(255, 255, 255, 0.776);
+    font-family: acumin-pro,sans-serif;
+    display: flex;
+    align-items: center;
+}
+.copyright div{
+    font-size: .8em;
+    margin-left: 100px;
+}
+.copyright ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 30px;
+    font-size: .8em;
+}
+.copyright ul li{
+    margin-left: 20px;
+}
+.copyright ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.copyright .copysvg{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+.copyright .copysvg div{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #696f73;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright .copysvg div svg{
+    fill: #434a51;
+}
+.copyright .copysvg div:hover{
+    background-color: #8f969a;
+    cursor: pointer;
+}
+
+
+/* ---mediaquery--- */
+
+@media(max-width: 1075px){
+    .header2 nav ul li a{
+        font-size: .7em;
+    }
+    .moreproduct .cardcont div:nth-of-type(1) p{
+        font-size: 1.3em;
+
+    }
+    .moreproduct .cardcont div:nth-of-type(2) p{
+        font-size: 1.2em;
+    }
+    .moreproduct .cardcont div:nth-of-type(3) p{
+        font-size: 1.1em;
+    }
+    .footerlinks{
+        width: 90%;
+    }
+}
+
+@media(max-width:1024px){
+    .header2 nav ul li{
+        font-size: .8em;
+    }
+}
+
+
+
+@media(max-width: 997px){
+    .alert h1{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .alert p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .header1 a .skew-et div .hide{
+        display: none;
+    }
+    .header1 a .skew-et{
+        width: 150px;
+    }
+    .header1 nav{
+        width: 50%;
+    }
+
+    .header2 nav ul li a{
+        font-size: .6em;
+    }
+    .header2 nav ul{
+        justify-content: space-evenly;
+    }
+    .wayii{
+        padding-left: 10px;
+        background-color: transparent;
+        margin-top: 200px;
+    }
+    .whatareyouiterestedin .divcont a{
+        width: 20%;
+    }
+    .whatareyouiterestedin .divcont .card1{
+        margin-left: 10px;
+    }
+    .whatareyouiterestedin .divcont .card4{
+        margin-right: 10px;
+    }
+    .whatareyouiterestedin .divcont a:nth-of-type(5){
+        display: none;
+    }
+    .whatareyouiterestedin .divcont a:nth-of-type(6){
+        display: none;
+    }
+    .accountdiv{
+        width: 90%;
+    }
+    .accounth1{
+        width: 50%;
+    }
+    .accountlists{
+        width: 50%;
+    }
+    .accountimage{
+        display: none;  
+    }
+    .carddiv{
+        width: 90%;
+    }
+    .cardh1{
+        width: 50%;
+    }
+    .cardlists{
+        width: 50%;
+    }
+    .cardimage{
+        display: none;  
+    }
+    .waystobankdiv{
+        width: 90%;
+    }
+    .waystobankh1{
+        width: 50%;
+    }
+    .waystobanklists{
+        width: 50%;
+    }
+    .waystobankimage{
+        display: none;  
+    }
+    
+    .nrnservicesdiv{
+        width: 90%;
+    }
+    .nrnservicesh1{
+        width: 50%;
+    }
+    .nrnserviceslists{
+        width: 50%;
+    }
+    .nrnservicesimage{
+        display: none;  
+    }
+    .privatebanking .privatebankingtext{
+        width: 50%;
+    }
+    .privatebankingimage{
+        width: 50%;
+    }
+    .moreproduct .cardcont div:nth-of-type(3){
+        display: none;
+    }
+    .moreproduct .cardcont div:nth-of-type(2){
+        width: 40%;
+    }
+    .moreproduct .cardcont div:nth-of-type(1){
+        width: 40%;
+        margin-left: 80px;
+    }
+    .icons .svgcont a .svg{
+        height: 40px;
+        width: 40px;
+    }
+    .icons .svgcont a div svg{
+        height: 24px;
+        margin: auto;
+    }
+    .svgsubtitle{
+        font-size: .8em;
+    }
+}
+
+
+
+
+@media(max-width: 949px){
+    .header2{
+        display: none;
+    }
+    .svgsubtitle{
+        font-size: .68em;
+    }
+}
+
+
+
+
+@media(max-width:768px){
+    .header1{
+        height: 150px;
+        display: block;
+    }
+    .header1 nav{
+        display: none;
+    }
+    .header1 a .skew-et{
+        display: none;
+    }
+    .header1 .px768{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        border-bottom: thin solid rgba(0, 0, 0, 0.202);
+    }
+    .header1 .px768 a{
+        margin-left: 30px;
+        position: relative;
+    }
+    .header1 .px768 button{
+        width: 15%;
+        min-height: 40px;
+        border-radius: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border: none;
+        background-color: #dd4f05;
+        font-size: 14px;
+        color: #fae5da;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-family: acumin-pro,sans-serif;
+        margin-left: 30px;
+    }
+    .header1 .hiddenpersonal{
+        display: block;
+        color: #dd4f05;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: acumin-pro,sans-serif;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+    .header1 .px768 div{
+        height: 60px;
+        width: 60px;
+        background-image: url(../images/Capture.PNG);
+        background-position: center;
+        background-size: cover;
+        margin-left: 80%;
+        position: absolute;
+    }
+    .header2{
+        display: none;
+    }
+
+    .banner{
+        width: 95%;
+        margin: auto;
+        margin-top: -20px;
+        height: 150px;
+    }
+    .banner .showmehow{
+        background-color: transparent;
+        position: absolute;
+        width: 95%;
+        margin: 20px;
+        padding: 0;
+        height: 100px;
+        margin-top: 70px;
+    }
+    .banner .showmehow h1{
+        font-size: 1.7em;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+    .banner .showmehow p{
+        font-size: 16px;
+        font-weight: 550;
+        margin-left: 10px;
+    }
+    .banner .showmehow a button{
+        width: 150px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    .whatareyouiterestedin{
+        display: none;
+    }
+    
+    .accountdiv{
+        width: 90%;
+        display: block;
+    }
+    .accounth1{
+        width: 100%;
+        min-height: 100px;
+    }
+    .accountdiv .accounth1 button{
+        display: none;
+    }
+    .accountlists{
+        width: 100%;
+    }
+    .accountlists button{
+    background-color: #dd4f05;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+    }
+
+    .carddiv{
+        width: 90%;
+        display: block;
+    }
+    .cardh1{
+        width: 100%;
+        min-height: 100px;
+    }
+    .carddiv .cardh1 button{
+        display: none;
+    }
+    .cardlists{
+        width: 100%;
+    }
+    .cardlists button{
+    background-color: #dd4f05;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+    }
+
+    .waystobankdiv{
+        width: 90%;
+        display: block;
+    }
+    .waystobankh1{
+        width: 100%;
+        min-height: 100px;
+    }
+    .waystobankdiv .waystobankh1 button{
+        display: none;
+    }
+    .waystobanklists{
+        width: 100%;
+    }
+    .waystobanklists button{
+    background-color: #dd4f05;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+    }
+
+    .nrnservicesdiv{
+        width: 90%;
+        display: block;
+    }
+    .nrnservicesh1{
+        width: 100%;
+        min-height: 100px;
+    }
+    .nrnservicesdiv .nrnservicesh1 button{
+        display: none;
+    }
+    .nrnserviceslists{
+        width: 100%;
+    }
+    .nrnserviceslists button{
+    background-color: #dd4f05;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+    }
+    .privatebanking{
+        display: block;
+
+    }
+    .privatebankingimage{
+        width: 80%;
+        margin-top: 0px;
+        margin: auto;
+    }
+    .privatebanking .privatebankingtext{
+        width: 80%;
+        margin: auto;
+    }
+    .privatebanking .hidden{
+        visibility: visible;
+        margin-left: 50px;
+    }
+    .privatebanking .privatebankingtext button{
+        visibility: hidden;
+    }
+    .icons{
+        display: none;
+    }
+    #accordionFlushExample{
+        display: block;
+        border-bottom: thin solid rgba(0, 0, 0, 0.382);
+        width: 80%;
+        margin: auto;
+    }
+    .footerlinks{
+        display: none;
+        border: none;
+    }
+    .numbers p{
+        display: none;
+    }
+    .footercontactus{
+        width: 80%;
+    }
+    .footercontactus span{
+        display: inline;
+        align-items: center;
+        position: absolute;
+        left: 85%;
+    }
+    .copyright{
+        display: grid;
+        justify-content: center;
+    }
+    .copyright .copysvg{
+        margin: auto;
+        position: relative;
+        top: -100px;
+    }
+    .copyright div{
+        margin: auto;
+        position: relative;
+        top: 50px;
+    }
+    .copyright ul{
+        margin: auto;
+        position: relative;
+        top: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media(max-width: 585px){
+    .header1 .px768 button{
+        font-size: .7em;
+        width: 100px;
+    }
+    .header1 .px768 div{
+        width: 40px;
+        height: 40px;
+    }
+    .whatareyouiterestedin{
+        margin-top: 250px;
+    }
+    .moreproduct .cardcont div:nth-of-type(2){
+        display: none;
+    }
+    .moreproduct .cardcont div:nth-of-type(1){
+        width: auto;
+    }
+    .footerlinks ul{
+        font-size: .7em;
+    }
+    .copyright div{
+        display: none;
+    }
+}
+@media(max-width: 320px){
+    .header1 .px768 button{
+        display: none;
+    }
+    .copyright ul{
+        display: none;
+    }
+    .copyright .copysvg{
+        top: -50px;
+    }
+}

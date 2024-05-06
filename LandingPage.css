@@ -1,0 +1,1335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---alert-- */
+.alert{
+    min-height: 150px;
+    width: 100%;
+    background-color: rgba(255, 140, 140, 0.089);
+}
+.alert h1{
+    color: #dd4f05;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: acumin-pro,sans-serif;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 30px;
+    line-height: 1.2;
+}
+.alert p{
+    font-family: acumin-pro, sans-serif;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #696f73;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* header */
+.header1{
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #dd4f05;
+    display: flex;
+}
+.px768{
+    display: none;
+}
+.hiddenpersonal{
+    display: none;
+}
+.header1 nav{
+    background-color: #dd4f05;
+    height: 100%;
+    width: 600px;
+}
+.header1 nav .headerlinkdiv{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.header1 nav .headerlinkdiv .countrybuttondiv a button{
+    width: 60px;
+    height: 25px;
+    border-radius: 20px;
+    opacity: .9;
+    border: none;
+}
+.header1 nav .headerlinkdiv .countrybuttondiv a button .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url('./images/istockphoto-652740802-612x612.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+.header1 nav .headerlinkdiv .countrybuttondiv a button .circle span{
+    margin-left: 20px;
+}
+.header1 nav .headerlinkdiv a{
+    color: #fae5da;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: acumin-pro,sans-serif;
+    text-decoration: none;
+}
+.header1 a{
+    text-decoration: none;
+}
+.header1 a .skew-et{
+    width: 250px;
+    height: 49px;
+    margin-left: -30px;
+    background-color: #ab3d04;
+    transform: skewX(-27deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.header1 a .skew-et:hover{
+    background-color: #8b2e00;
+}
+.header1 a .skew-et div{
+    transform: skewX(27deg);
+    font-size: 14px;
+    color: #fae5da;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: acumin-pro,sans-serif;
+    display: flex;
+    align-items: center;
+}
+.header1 a .skew-et div span{
+    margin-left: 10px;
+}
+
+.header2{
+    width: 100%;
+    height: 100px;
+}
+.header2 nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.header2 nav ul{
+    height: 100px;
+    width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    list-style-type: none;
+}
+.header2 nav ul li{
+    padding-bottom: 30px;
+    margin-top: 40px;
+}
+.header2 nav ul li a{
+    font-family: acumin-pro,sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #5e5e5e;
+    text-align: left;
+    background-color: transparent;
+    text-decoration: none;
+    padding-left: 35px;
+}
+.header2 nav ul li:nth-of-type(1){
+    margin-left: 75px;
+}
+.header2 nav ul li:nth-of-type(1):hover{
+    border: none;
+}
+.header2 nav ul li:hover{
+    border-bottom: medium solid #dd4f05;
+}
+.header2 nav ul li a:hover{
+    color: #dd4f05;
+}
+.header2 nav img{
+    margin-left: 250px;
+    margin-top: -30px;
+    height: 100px;
+    width: 100px;
+}
+#home{
+    color: #000;
+}
+.personaldropdowncont{
+    height: 600px;
+    width: 800px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
+    display: flex;
+    position: absolute;
+    margin-top: 33px;
+    visibility: hidden;
+    z-index: 1;
+}
+.personaldropdowncont .items{
+    height: 100%;
+    width: 35%;
+    background-color: white;
+}
+.personaldropdowncont .itemsitems{
+    width: 65%;
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+}
+.personaldropdowncont .items div{
+    width: 80%;
+    border-bottom: thin solid rgba(0, 0, 0, 0.315);
+    margin: auto;
+    font-family: acumin-pro,sans-serif;
+    color: #5e5e5e;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color: transparent;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+.personaldropdowncont .items div:hover{
+    color: #dd4f05;
+}
+header nav ul .personal:hover .personaldropdowncont{
+    visibility: visible;
+}
+.personaldropdowncont .items div:hover{
+    background-color: #5e5e5e11;
+}
+.accountpersonal{
+    display: flex; 
+    align-items: center; 
+}
+.accountpersonal span{
+    margin-left: 10px;
+}
+.accountpersonal:hover span{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes move {
+    to{
+        transform: translateX(20px);
+    }
+}
+.Servicespersonal{
+    display: flex;
+    align-items: center;
+}
+.Servicespersonal span{
+    margin-left: 10px;
+}
+.Servicespersonal:hover span{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.cardspersonal{
+    display: flex;
+    align-items: center;
+}
+.cardspersonal span{
+    margin-left: 10px;
+}
+.cardspersonal:hover span{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.loanspersinal{
+    display: flex;
+    align-items: center;
+}
+.loanspersinal span{
+    margin-left: 10px;
+}
+.loanspersinal:hover span{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.waystobankpersonal{
+    display: flex;
+    align-items: center;
+}
+.waystobankpersonal span{
+    margin-left: 10px;
+}
+.waystobankpersonal:hover span{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.nrnpersonal{
+    display: flex;
+    align-items: center;
+}
+.nrnpersonal span{
+    margin-left: 10px;
+}
+.nrnpersonal:hover span{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.Privatepersonal{
+    display: flex;
+    align-items: center;
+}
+.Privatepersonal span{
+    margin-left: 10px;
+}
+.Privatepersonal:hover span{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.businessdropdowncont{
+    height: 600px;
+    width: 800px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
+    display: flex;
+    position: absolute;
+    margin-top: 33px;
+    visibility: hidden;
+    margin-left: -112px;
+    z-index: 1;
+}
+.businessdropdowncont .items{
+    height: 100%;
+    width: 35%;
+    background-color: white;
+}
+.businessdropdowncont .itemsitems{
+    width: 65%;
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+}
+.businessdropdowncont .items div{
+    width: 80%;
+    border-bottom: thin solid rgba(0, 0, 0, 0.315);
+    margin: auto;
+    font-family: acumin-pro,sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #5e5e5e;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+header nav ul .business:hover .businessdropdowncont{
+    visibility: visible;
+}
+.businessdropdowncont .items div:hover{
+    background-color: #5e5e5e11;
+}
+.aboutusdropdowncont{
+    height: 600px;
+    width: 800px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
+    display: flex;
+    position: absolute;
+    margin-top: 33px;
+    visibility: hidden;
+    margin-left: -224px;
+    z-index: 1;
+}
+.aboutusdropdowncont .items{
+    height: 100%;
+    width: 35%;
+    background-color: white;
+}
+.aboutusdropdowncont .itemsitems{
+    width: 65%;
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+}
+.aboutusdropdowncont .items div{
+    width: 80%;
+    border-bottom: thin solid rgba(0, 0, 0, 0.315);
+    margin: auto;
+    font-family: acumin-pro,sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #5e5e5e;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+header nav ul .aboutus:hover .aboutusdropdowncont{
+    visibility: visible;
+}
+.aboutusdropdowncont .items div:hover{
+    background-color: #5e5e5e11;
+}
+
+.investorsrelationdropdowncont{
+    height: 600px;
+    width: 800px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
+    display: flex;
+    position: absolute;
+    margin-top: 33px;
+    visibility: hidden;
+    margin-left: -333px;
+    z-index: 1;
+}
+.investorsrelationdropdowncont .items{
+    height: 100%;
+    width: 35%;
+    background-color: white;
+}
+.investorsrelationdropdowncont .itemsitems{
+    width: 65%;
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+}
+.investorsrelationdropdowncont .items div{
+    width: 80%;
+    border-bottom: thin solid rgba(0, 0, 0, 0.315);
+    margin: auto;
+    font-family: acumin-pro,sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #5e5e5e;
+    background-color: transparent;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
+    visibility: visible;
+}
+.investorsrelationdropdowncont .items div:hover{
+    background-color: #5e5e5e11;
+}
+.loginbar{
+    height: 40vh;
+    width: 200px;
+    position: absolute;
+    z-index: 100;
+    margin-top: 50px;
+    background-color: #ceded6;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.205);
+    margin-left: 77%;
+}
+.loginbar .onlinebanking{
+    padding: 10px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 1em;
+    color: #696f73;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+.loginbar .select{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(251, 224, 224, 0.363);
+    height: 40px;
+    margin-bottom: 40px;
+}
+.loginbar .select p{
+    font-size: .8em;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    color: #dd4f05;
+    padding-bottom: 28px;
+}
+.loginbar .select p a{
+    color: #dd4f05;
+    text-decoration: none;
+}
+.loginbar button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: auto;
+    background-color: #dd4f05;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+}
+.loginbar .reg{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    word-spacing: 10px;
+    text-align: center;
+    font-family: acumin-pro, sans-serif;
+    
+}
+.loginbar .reg a{
+    text-decoration: none;
+    color: #5e5e5e;
+}
+.loginbar .reg a:hover{
+    color: #dd4f05;
+}
+
+/* ---main--- */
+.carousel{
+    position: relative;
+}
+.carousel-indicators{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0;
+    margin-left: 15%;
+    margin-bottom: 1rem;
+}
+#carouselExampleCaptions{
+    cursor: grab;
+}
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-inner::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.carousel-item{
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+.carousel-caption{
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    /* color: #fff; */
+    text-align: center;
+}
+.secondslidetext h1{
+    color: orangered;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 400;
+    font-size: 2.2em;
+    text-align: left;
+    margin-top: -75vh;
+    width: 40%;
+}
+.secondslidetext h1 span{
+    color: #696f73;
+    font-size: 1.5em;
+}
+.secondslidetext p{
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    width: 40%;
+    padding: 20px 20px 20px 0px;
+    text-align: left;
+}
+.thirdslidetext h1{
+    color: #696f73;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 400;
+    font-size: 2.2em;
+    text-align: left;
+    margin-top: -75vh;
+    width: 40%;
+}
+.thirdslidetext h1 span{
+    color: orangered;
+    font-size: 1.5em;
+}
+.thirdslidetext p{
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    width: 40%;
+    padding: 20px 20px 20px 0px;
+    text-align: left;
+}
+.firthslidetext h1{
+    color: #696f73;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    text-align: left;
+    margin-top: -75vh;
+    width: 40%;
+}
+.firthslidetext h1 span{
+    color: orangered;
+    font-size: 1.2em;
+}
+.firthslidetext p{
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    width: 40%;
+    padding: 20px 20px 20px 0px;
+    text-align: left;
+}
+.fifthslidetext h1{
+    color: #696f73;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 400;
+    font-size: 2.2em;
+    text-align: left;
+    margin-top: -75vh;
+    width: 40%;
+}
+.fifthslidetext h1 span{
+    color: orangered;
+    font-size: 1.5em;
+}
+.fifthslidetext p{
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    width: 40%;
+    padding: 20px 20px 20px 0px;
+    text-align: left;
+}
+.sixthslidetext h1{
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    font-size: 2.2em;
+    text-align: left;
+    margin-top: -75vh;
+    width: 40%;
+    color: orangered;
+}
+.sixthslidetext p{
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    width: 40%;
+    padding: 20px 20px 20px 0px;
+    text-align: left;
+}
+.seventhslidetext h1{
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    font-size: 2.2em;
+    text-align: left;
+    margin-top: -75vh;
+    width: 40%;
+    color: orangered;
+}
+.seventhslidetext p{
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    width: 40%;
+    padding: 20px 20px 20px 0px;
+    text-align: left;
+}
+.eightslidetext h1{
+    font-family: acumin-pro,sans-serif;
+    font-weight: 400;
+    font-size: 2.2em;
+    text-align: left;
+    margin-top: -75vh;
+    width: 40%;
+    color: orangered;
+}
+.eightslidetext p{
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    width: 40%;
+    padding: 20px 20px 20px 0px;
+    text-align: left;
+}
+
+.InnovativeBankingProducts{
+    min-height: 800px;
+    border-top: thin solid rgba(0, 0, 0, 0.431);
+    padding-top: 80px;
+    background-color: #d1d8db6d;
+}
+.InnovativeBankingProducts .texts{
+    width: 35%;
+    margin: auto;
+    padding: 50px;
+}
+.InnovativeBankingProducts .texts h1{
+    font-family: acumin-pro,sans-serif;
+    font-size: 1.6em;
+    color: rgba(0, 0, 0, 0.572);
+    text-align: center;
+}
+.InnovativeBankingProducts .texts p{
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 25px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.InnovativeBankingProducts .cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 20px;
+}
+.InnovativeBankingProducts .cardcontainer div{
+    width: 238.75px;
+    height: 425.02px;
+    margin-bottom: 50px;
+}
+.InnovativeBankingProducts .cardcontainer div .image{
+    width: 100%;
+    height: 40%;
+}
+
+#img1{
+    background-image: url('./images/open\ account.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img2{
+    background-image: url('./images/GTCREA.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#img3{
+    background-image: url('./images/quick\ credit.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img4{
+    background-image: url('./images/Help\ Center.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img5{
+    background-image: url('./images/Going\ beyond.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img6{
+    background-image: url('./images/Macro\ economy.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img7{
+    background-image: url('./images/segun\ agbaje.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img8{
+    background-image: url('./images/corvus.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.InnovativeBankingProducts .cardcontainer div h1{
+    font-family: acumin-pro,sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #424a52;
+    text-align: start;
+    margin-top: -50px;
+}
+.InnovativeBankingProducts .cardcontainer div p{
+    font-size: 1em;
+    font-weight: 500;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.572);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.InnovativeBankingProducts .cardcontainer div a{
+    color: #dd4f05;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: acumin-pro,sans-serif;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+.InnovativeBankingProducts .cardcontainer div a:hover{
+    color: #ab3d04;
+}
+.seconndcarousel{
+    width: 100%;
+    height: 400px;
+}
+.seconndcarousel h1{
+    font-size: 1.4em;
+    color: #696f73;
+    margin-top: 20px;
+    font-family: acumin-pro,sans-serif;
+    margin-left: 50px;
+    margin-right: 100px;
+    font-weight: 900;
+}
+.seconndcarousel .cardcontainer{
+    border-right: thin solid rgba(0, 0, 0, 0.267);
+    height: 300px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.seconndcarousel .cardcontainer div{
+    width: 40%;
+    height: 250px;
+    box-shadow: 5px 2px 20px 1px rgba(0, 0, 0, 0.192);
+}
+.seconndcarousel .cardcontainer div:nth-of-type(1){
+    display: block;
+    position: relative;
+}
+.seconndcarousel .cardcontainer div:nth-of-type(1) .bann{
+    width: 100%;
+    height: 70px;
+    background-image: url('./images/banner-child-promotingenterprise-foodanddrink-for-second-carosel.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.seconndcarousel .cardcontainer div:nth-of-type(1) .text{
+    width: 100%;
+    margin-top: 70px;
+    height: 180px;
+    padding-top: 30px;
+}
+.seconndcarousel .cardcontainer div:nth-of-type(1) .text p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.32);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.seconndcarousel .cardcontainer div:nth-of-type(1) .text button{
+    background-color: #dd4f05;
+    padding: 10px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+    margin: auto;
+    width: 150px;
+}
+.seconndcarousel .cardcontainer div:nth-of-type(1) .text button:hover{
+    color: #8b2e00;
+}
+.seconndcarousel .cardcontainer .back{
+    background-image: url('./images/ndani-promo-bg\ \(1\).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.seconndcarousel .cardcontainer .back img{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.seconndcarousel .cardcontainer .back p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(255, 255, 255, 0.685);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.seconndcarousel .cardcontainer .back button{
+    background-color: #dd4f05;
+    padding: 10px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+    margin-top: 20px;
+    cursor: pointer;
+    margin: auto;
+    width: 150px;
+}
+.icons{
+    margin-top: 130px;
+    background-image: linear-gradient(white, #f7f8f8);
+    height: 120px;
+}
+.icons .svgcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}
+.icons .svgcont a{
+    height: 100px;
+    width: 120px;
+    text-decoration: none;
+    color: #696f73;
+    font-weight: bold;
+    font-family: acumin-pro,sans-serif;
+}
+.icons .svgcont a .svg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf0f2;
+}
+.icons .svgcont a div svg{
+    height: 40px;
+    margin: auto;
+}
+.icons .svgcont a:hover .svg{
+    background-color: #dd4f05;
+}
+.icons .svgcont a:hover div svg{
+    fill: white;
+}
+.svgsubtitle{
+    margin-top: 100px;
+    text-align: center;
+}
+footer{
+    min-height: 300px;
+}
+#accordionFlushExample{
+    display: none;
+    font-family: acumin-pro,sans-serif;
+} 
+.footerlinks{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    justify-content: space-between;
+    border-bottom: thin solid rgba(0, 0, 0, 0.296);
+    margin-bottom: 20px;
+}
+.footerlinks ul{
+    list-style-type: none;
+    font-size: .9em;
+    color: #696f73;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.footerlinks ul a{
+    text-decoration: none;
+    color: #696f73;
+}
+.footerlinks ul a:hover{
+    color: #000;
+}
+.footerlinks ul:hover{
+    color: #000;
+}
+.footerlinks ul li{
+    font-size: .8em;
+    font-weight: 100;
+    line-height: 1;
+    margin-top: 20px;
+}
+.footerlinks ul li:nth-of-type(1){
+    margin-top: 20px;
+}
+.footerlinks ul span{
+    display: none;
+}
+.footerlinks ul li:hover{
+    color: #dd4f05;
+    cursor: pointer;
+}
+.footercontactus{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    min-height: 100px;
+    margin: auto;
+}
+div.numbers{
+    font-size: 1.2;
+    font-weight: 600;
+    line-height: 2.5;
+    font-family: acumin-pro,sans-serif;
+    color: rgba(0, 0, 0, 0.561);
+    flex-wrap: wrap;
+    display: flex;
+    width: 90%;
+}
+.footercontactus span{
+    display: none;
+}
+.footercontactus p{
+    margin-left: 40px;
+}
+.footercontactus p:nth-of-type(6){
+    margin-left: 70px;
+}
+.copyright{
+    width: 100%;
+    min-height: 100px;
+    background-color: #434a51;
+    color: rgba(255, 255, 255, 0.776);
+    font-family: acumin-pro,sans-serif;
+    display: flex;
+    align-items: center;
+}
+.copyright div{
+    font-size: .8em;
+    margin-left: 100px;
+}
+.copyright ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 30px;
+    font-size: .8em;
+}
+.copyright ul li{
+    margin-left: 20px;
+}
+.copyright ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.copyright .copysvg{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+.copyright .copysvg div{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #696f73;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright .copysvg div svg{
+    fill: #434a51;
+}
+.copyright .copysvg div:hover{
+    background-color: #8f969a;
+    cursor: pointer;
+}
+
+
+/* ---mediaquery--- */
+
+@media(max-width: 1075px){
+    .header2 nav ul li a{
+        font-size: .7em;
+    }
+    .footerlinks{
+        width: 90%;
+    }
+}
+
+@media(max-width:1024px){
+    .header2 nav ul li{
+        font-size: .9em;
+    }
+}
+
+@media(max-width: 997px){
+    .alert h1{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .alert p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .header1 a .skew-et div .hide{
+        display: none;
+    }
+    .header1 a .skew-et{
+        width: 150px;
+    }
+    .header1 nav{
+        width: 50%;
+    }
+
+    .header2 nav ul li a{
+        font-size: .6em;
+    }
+    .header2 nav ul{
+        justify-content: space-evenly;
+    }
+
+    .hidden997{
+        display: none;
+    }
+    .loginbar{
+        margin-left: 700px;
+    }
+    .svgsubtitle{
+        font-size: .8em;
+    }
+}
+
+@media(max-width: 949px){
+    .header2{
+        display: none;
+    }
+    .svgsubtitle{
+        font-size: .68em;
+    }
+    .InnovativeBankingProducts .cardcontainer div{
+        width: 200px;
+    }
+    .loginbar{
+        margin-left: 550px;
+    }
+}
+
+
+@media(max-width:768px){
+    .header1{
+        height: 150px;
+        display: block;
+    }
+    .header1 nav{
+        display: none;
+    }
+    .header1 a .skew-et{
+        display: none;
+    }
+    .header1 .px768{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        border-bottom: thin solid rgba(0, 0, 0, 0.202);
+    }
+    .header1 .px768 a{
+        margin-left: 30px;
+        position: relative;
+    }
+    .header1 .px768 button{
+        width: 15%;
+        min-height: 40px;
+        border-radius: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border: none;
+        background-color: #dd4f05;
+        font-size: 14px;
+        color: #fae5da;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-family: acumin-pro,sans-serif;
+        margin-left: 30px;
+    }
+    .header1 .px768 div{
+        height: 60px;
+        width: 60px;
+        background-image: url(../Multimedia/gt.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-left: 80%;
+        position: absolute;
+    }
+    .header2{
+        display: none;
+    }
+
+    .hidden768{
+        display: none;
+    }
+    .loginbar{
+        display: none;
+    }
+    #indi{
+        position: absolute;
+        top: -10vh;
+    }
+    .InnovativeBankingProducts .text{
+        margin-left: 10px;
+    }
+    .cardcontainer div{
+        margin: auto;
+    }
+    .icons{
+        display: none;
+    }
+    #accordionFlushExample{
+        border-bottom: thin solid rgba(0, 0, 0, 0.382);
+        width: 80%;
+        font-size: .8em;
+        display: block;
+        margin: auto;
+    }
+    .footerlinks{
+        display: none;
+        border: none;
+    }
+    .footerlinks ul{
+        display: flex;
+        align-items: center;
+        height: 30px;
+        border-bottom: thin solid rgba(0, 0, 0, 0.382);
+        width: 80%;
+        font-size: .8em;
+    }
+    .footerlinks ul span{
+        display: inline;
+        position: absolute;
+        left: 70%;
+    }
+    .footerlinks ul li{
+        display: none;
+    }
+    .numbers p{
+        display: none;
+    }
+    .footercontactus{
+        width: 80%;
+    }
+    .footercontactus span{
+        display: inline;
+        align-items: center;
+        position: absolute;
+        left: 85%;
+    }
+    .copyright{
+        display: grid;
+        justify-content: center;
+    }
+    .copyright .copysvg{
+        margin: auto;
+        position: relative;
+        top: -100px;
+    }
+    .copyright div{
+        margin: auto;
+        position: relative;
+        top: 50px;
+    }
+    .copyright ul{
+        margin: auto;
+        position: relative;
+        top: 50px;
+        margin-bottom: 10px;
+    }
+    .seconndcarousel{
+        display: none;
+    }
+}
+
+
+@media(max-width: 585px){
+    .header1 .px768 button{
+        font-size: .7em;
+        width: 100px;
+    }
+    .header1 .px768 div{
+        width: 40px;
+        height: 40px;
+    }
+    .InnovativeBankingProducts .texts{
+        display: none;
+    }
+    .footerlinks ul{
+        font-size: .7em;
+    }
+    .copyright div{
+        display: none;
+    }
+}
+
+
+
+
+@media(max-width: 320px){
+    .header1 .px768 button{
+        display: none;
+    }
+    .copyright ul{
+        display: none;
+    }
+    .copyright .copysvg{
+        top: -50px;
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px" viewBox="0 0 60 60" version="1.1">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>14 -Building- (house, home, property, real, estate, outline)</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Icons" transform="translate(-467.000000, -497.000000)" stroke="#d7d7d7" stroke-width="2">
+            <g id="14--Building--(house,-home,-property,-real,-estate,-outline)" transform="translate(468.000000, 498.000000)">
+                <path d="M0,58 L58,58" id="Stroke-121"/>
+                <path d="M32,20 L32,49" id="Stroke-122" stroke-dasharray="2,4,2,4,2,4"/>
+                <path d="M38,20 L38,50.101" id="Stroke-123" stroke-dasharray="2,4,2,4,2,4"/>
+                <path d="M44,20 L44,50.805" id="Stroke-124" stroke-dasharray="2,4,2,4,2,4"/>
+                <path d="M10,4 L10,54" id="Stroke-125" stroke-dasharray="2,4,2,4,2,4"/>
+                <path d="M16,4 L16,48" id="Stroke-126" stroke-dasharray="2,4,2,4,2,4"/>
+                <path d="M22,4 L22,46" id="Stroke-127" stroke-dasharray="2,4,2,4,2,4"/>
+                <path d="M28,4 L28,12" id="Stroke-128" stroke-dasharray="2,4,2,4,2,4"/>
+                <path d="M52.651,58 C52.873,57.374 53,56.702 53,56 C53,52.686 50.313,50 47,50 C44.677,50 42.666,51.323 41.669,53.254 C40.959,51.357 39.144,50 37,50 C34.238,50 32,52.239 32,55 C32,56.131 32.389,57.162 33.022,58 L40.973,58 L52.651,58 L52.651,58 Z" id="Stroke-129"/>
+                <path d="M28.026,58 L33.042,58 C32.402,57.163 32,56.135 32,55 C32,53.091 33.082,51.452 34.655,50.609 C33.742,49.625 32.448,49 31,49 C29.315,49 27.833,49.839 26.927,51.115 C26.498,48.222 24.012,46 21,46 C17.686,46 15,48.686 15,52 C11.686,52 9,54.686 9,58 L21,58 L28.026,58 L28.026,58 Z" id="Stroke-130"/>
+                <path d="M27,16 L27,51.025 C27.911,49.801 29.357,49 31,49 C32.448,49 33.742,49.625 34.655,50.609 C35.357,50.233 36.148,50 37,50 C39.145,50 40.959,51.357 41.669,53.254 C42.666,51.323 44.677,50 47,50 C47.702,50 48.374,50.127 49,50.349 L49,16 L27,16 L27,16 Z" id="Stroke-131"/>
+                <path d="M15,52 C15,48.686 17.686,46 21,46 C24.012,46 26.499,48.222 26.928,51.115 C26.95,51.084 26.977,51.056 27,51.025 L27,16 L33,16 L33,0 L6,0 L6,58 L9,58 C9,54.686 11.686,52 15,52 L15,52 Z" id="Stroke-132"/>
+            </g>
+        </g>
+    </g>
+</svg>
