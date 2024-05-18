@@ -338,7 +338,8 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
 }
 .banner .Simplebankingssolution{
     background-color: rgba(255, 255, 255, 0.8);
-    min-height: 50%;
+    min-height: 30px;
+    padding-bottom: 20px;
     width: 35%;
     margin-left: 100px;
     font-family: acumin-pro,sans-serif;
