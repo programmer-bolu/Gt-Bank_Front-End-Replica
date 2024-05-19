@@ -6,6 +6,7 @@
 
 /* ---alert-- */
 .alert {
+    min-height: 150px;
     width: 100%;
     background-color: rgba(255, 140, 140, 0.089);
 }
@@ -17,7 +18,7 @@
     font-family: acumin-pro, sans-serif;
     margin-left: 80px;
     margin-right: 80px;
-    line-height: 1.2;
+    padding-top: 30px;
 }
 
 .alert p {
@@ -25,7 +26,7 @@
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 10px;
-    font-size: 1.3vw;
+    font-size: 19px;
     line-height: 1.5;
     color: #696f73;
     font-weight: 400;
@@ -168,6 +169,10 @@
     padding: 0px 10px;
 }
 
+#home {
+    color: #dd4f05 !important;
+}
+
 .header2 nav ul li:nth-of-type(1) {
     margin-left: 75px;
 }
@@ -179,6 +184,9 @@
 .header2 nav ul li:hover {
     border-bottom: medium solid #dd4f05;
 }
+.header2 nav ul li:nth-last-of-type(1):hover{
+    border-bottom: none;
+}
 
 .header2 nav ul li a:hover {
     color: #dd4f05;
@@ -189,10 +197,6 @@
     margin-top: -30px;
     height: 100px;
     width: 100px;
-}
-
-#home {
-    color: #000;
 }
 
 .personaldropdowncont {
@@ -238,6 +242,18 @@
 
 header nav ul .personal:hover .personaldropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+    animation-duration: .5s;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
 }
 
 .personaldropdowncont .items div:hover {
@@ -395,6 +411,8 @@ header nav ul .personal:hover .personaldropdowncont {
 
 header nav ul .business:hover .businessdropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+    animation-duration: .5s;
 }
 
 .businessdropdowncont .items div:hover {
@@ -441,6 +459,8 @@ header nav ul .business:hover .businessdropdowncont {
 
 header nav ul .aboutus:hover .aboutusdropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+    animation-duration: .5s;
 }
 
 .aboutusdropdowncont .items div:hover {
@@ -481,12 +501,14 @@ header nav ul .aboutus:hover .aboutusdropdowncont {
     line-height: 1.5;
     color: #5e5e5e;
     background-color: transparent;
-    padding: 20px;
+    padding-top: 20px;
     padding-bottom: 10px;
 }
 
 header nav ul .investorsrelation:hover .investorsrelationdropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+    animation-duration: .5s;
 }
 
 .investorsrelationdropdowncont .items div:hover {
@@ -1378,11 +1400,13 @@ div.numbers {
         width: 40px;
         height: 40px;
     }
-        .InnovativeBankingProducts{
-            padding-top: 10px;
-            height: 100px;
-            padding-bottom: 10px;
-        }
+
+    .InnovativeBankingProducts {
+        padding-top: 10px;
+        height: 100px;
+        padding-bottom: 10px;
+    }
+
     .InnovativeBankingProducts .texts {
         margin-top: 10px;
     }

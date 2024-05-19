@@ -1,24 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.alert{
+
+.alert {
     min-height: 150px;
     width: 100%;
     background-color: rgba(255, 140, 140, 0.089);
 }
-.alert h1{
+
+.alert h1 {
     color: #dd4f05;
     font-size: 19px;
     font-weight: 700;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     margin-left: 80px;
     margin-right: 80px;
     padding-top: 30px;
 }
-.alert p{
-    font-family: acumin-pro,sans-serif;
+
+.alert p {
+    font-family: acumin-pro, sans-serif;
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 10px;
@@ -27,26 +30,31 @@
     color: #696f73;
     font-weight: 400;
 }
+
 /* ----header--- */
 
-.header1{
+.header1 {
     width: 100%;
     height: 50px;
     border-top: 1px solid #dd4f05;
     display: flex;
 }
-.px768{
+
+.px768 {
     display: none;
 }
-.hiddenpersonal{
+
+.hiddenpersonal {
     display: none;
 }
-.header1 nav{
+
+.header1 nav {
     background-color: #dd4f05;
     height: 100%;
     width: 600px;
 }
-.header1 nav .headerlinkdiv{
+
+.header1 nav .headerlinkdiv {
     width: 90%;
     margin: auto;
     display: flex;
@@ -54,14 +62,16 @@
     justify-content: space-evenly;
     margin-top: 10px;
 }
-.header1 nav .headerlinkdiv .countrybuttondiv a button{
+
+.header1 nav .headerlinkdiv .countrybuttondiv a button {
     width: 60px;
     height: 25px;
     border-radius: 20px;
     opacity: .9;
     border: none;
 }
-.header1 nav .headerlinkdiv .countrybuttondiv a button .circle{
+
+.header1 nav .headerlinkdiv .countrybuttondiv a button .circle {
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -71,20 +81,24 @@
     background-repeat: no-repeat;
     margin-left: 10px;
 }
-.header1 nav .headerlinkdiv .countrybuttondiv a button .circle span{
+
+.header1 nav .headerlinkdiv .countrybuttondiv a button .circle span {
     margin-left: 20px;
 }
-.header1 nav .headerlinkdiv a{
+
+.header1 nav .headerlinkdiv a {
     color: #fae5da;
     font-size: 13px;
     font-weight: 600;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     text-decoration: none;
 }
-.header1 a{
+
+.header1 a {
     text-decoration: none;
 }
-.header1 a .skew-et{
+
+.header1 a .skew-et {
     width: 250px;
     height: 49px;
     margin-left: -30px;
@@ -95,46 +109,55 @@
     justify-content: center;
     text-decoration: none;
 }
-.header1 a .skew-et:hover{
+
+.header1 a .skew-et:hover {
     background-color: #8b2e00;
 }
-.header1 a .skew-et div{
+
+.header1 a .skew-et div {
     transform: skewX(27deg);
     font-size: 14px;
     color: #fae5da;
     font-weight: 600;
     letter-spacing: 1px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     display: flex;
     align-items: center;
 }
-.header1 a .skew-et div span{
+
+.header1 a .skew-et div span {
     margin-left: 10px;
 }
 
-.header2{
+.header2 {
     width: 100%;
     height: 100px;
 }
-.header2 nav{
+
+.header2 nav {
     display: flex;
     height: 100%;
     align-items: center;
 }
-.header2 nav ul{
+
+.header2 nav ul {
     height: 100px;
     width: 850px;
     display: flex;
     align-items: center;
-    justify-content: space-between  ;
+    justify-content: space-between;
     list-style-type: none;
 }
-.header2 nav ul li{
+
+.header2 nav ul li {
     padding-bottom: 30px;
     margin-top: 40px;
+    justify-content: center;
+    text-align: center;
 }
-.header2 nav ul li a{
-    font-family: acumin-pro,sans-serif;
+
+.header2 nav ul li a {
+    font-family: acumin-pro, sans-serif;
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5;
@@ -142,30 +165,48 @@
     text-align: left;
     background-color: transparent;
     text-decoration: none;
-    padding-left: 35px;
+    padding: 0px 10px;
 }
-.header2 nav ul li:nth-of-type(1){
+
+.header2 nav ul li:nth-of-type(1) {
     margin-left: 75px;
 }
-.header2 nav ul li:nth-of-type(1):hover{
+
+.header2 nav ul li:nth-of-type(1):hover {
     border: none;
 }
-.header2 nav ul li:hover{
+
+.header2 nav ul li:hover {
     border-bottom: medium solid #dd4f05;
 }
-.header2 nav ul li a:hover{
+
+.header2 nav ul li a:hover {
     color: #dd4f05;
 }
-.header2 nav img{
+
+.header2 nav img {
     margin-left: 250px;
     margin-top: -30px;
     height: 100px;
     width: 100px;
 }
-header nav ul .personal a{
+
+header nav ul .business a {
     color: #dd4f05;
 }
-.personaldropdowncont{
+.header2 nav ul li:nth-last-of-type(1):hover {
+    border-bottom: none;
+}
+@keyframes slide-down {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+.personaldropdowncont {
     height: 600px;
     width: 800px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
@@ -175,21 +216,24 @@ header nav ul .personal a{
     visibility: hidden;
     z-index: 1;
 }
-.personaldropdowncont .items{
+
+.personaldropdowncont .items {
     height: 100%;
     width: 35%;
     background-color: white;
 }
-.personaldropdowncont .itemsitems{
+
+.personaldropdowncont .itemsitems {
     width: 65%;
     height: 100%;
     background-color: rgb(221, 221, 221);
 }
-.personaldropdowncont .items div{
+
+.personaldropdowncont .items div {
     width: 80%;
     border-bottom: thin solid rgba(0, 0, 0, 0.315);
     margin: auto;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     color: #5e5e5e;
     font-size: 1em;
     font-weight: 600;
@@ -197,15 +241,20 @@ header nav ul .personal a{
     background-color: transparent;
     padding-bottom: 10px;
     padding-top: 30px;
+    text-align: left;
 }
-header nav ul .personal:hover .personaldropdowncont{
+
+header nav ul .personal:hover .personaldropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+    animation-duration: .5s;
 }
-.personaldropdowncont .items div:hover{
+
+.personaldropdowncont .items div:hover {
     background-color: #5e5e5e11;
 }
 
-.businessdropdowncont{
+.businessdropdowncont {
     height: 600px;
     width: 800px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
@@ -216,21 +265,24 @@ header nav ul .personal:hover .personaldropdowncont{
     margin-left: -112px;
     z-index: 1;
 }
-.businessdropdowncont .items{
+
+.businessdropdowncont .items {
     height: 100%;
     width: 35%;
     background-color: white;
 }
-.businessdropdowncont .itemsitems{
+
+.businessdropdowncont .itemsitems {
     width: 65%;
     height: 100%;
     background-color: rgb(221, 221, 221);
 }
-.businessdropdowncont .items div{
+
+.businessdropdowncont .items div {
     width: 80%;
     border-bottom: thin solid rgba(0, 0, 0, 0.315);
     margin: auto;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5;
@@ -238,14 +290,20 @@ header nav ul .personal:hover .personaldropdowncont{
     background-color: transparent;
     padding-top: 20px;
     padding-bottom: 10px;
+    text-align: left;
 }
-header nav ul .business:hover .businessdropdowncont{
+
+header nav ul .business:hover .businessdropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+    animation-duration: .5s;
 }
-.businessdropdowncont .items div:hover{
+
+.businessdropdowncont .items div:hover {
     background-color: #5e5e5e11;
 }
-.aboutusdropdowncont{
+
+.aboutusdropdowncont {
     height: 600px;
     width: 800px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
@@ -256,21 +314,24 @@ header nav ul .business:hover .businessdropdowncont{
     margin-left: -224px;
     z-index: 1;
 }
-.aboutusdropdowncont .items{
+
+.aboutusdropdowncont .items {
     height: 100%;
     width: 35%;
     background-color: white;
 }
-.aboutusdropdowncont .itemsitems{
+
+.aboutusdropdowncont .itemsitems {
     width: 65%;
     height: 100%;
     background-color: rgb(221, 221, 221);
 }
-.aboutusdropdowncont .items div{
+
+.aboutusdropdowncont .items div {
     width: 80%;
     border-bottom: thin solid rgba(0, 0, 0, 0.315);
     margin: auto;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5;
@@ -278,15 +339,20 @@ header nav ul .business:hover .businessdropdowncont{
     background-color: transparent;
     padding-top: 20px;
     padding-bottom: 10px;
+    text-align: left;
 }
-header nav ul .aboutus:hover .aboutusdropdowncont{
+
+header nav ul .aboutus:hover .aboutusdropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+    animation-duration: .5s;
 }
-.aboutusdropdowncont .items div:hover{
+
+.aboutusdropdowncont .items div:hover {
     background-color: #5e5e5e11;
 }
 
-.investorsrelationdropdowncont{
+.investorsrelationdropdowncont {
     height: 600px;
     width: 800px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
@@ -297,38 +363,46 @@ header nav ul .aboutus:hover .aboutusdropdowncont{
     margin-left: -333px;
     z-index: 1;
 }
-.investorsrelationdropdowncont .items{
+
+.investorsrelationdropdowncont .items {
     height: 100%;
     width: 35%;
     background-color: white;
 }
-.investorsrelationdropdowncont .itemsitems{
+
+.investorsrelationdropdowncont .itemsitems {
     width: 65%;
     height: 100%;
     background-color: rgb(221, 221, 221);
 }
-.investorsrelationdropdowncont .items div{
+
+.investorsrelationdropdowncont .items div {
     width: 80%;
     border-bottom: thin solid rgba(0, 0, 0, 0.315);
     margin: auto;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5;
     color: #5e5e5e;
     background-color: transparent;
-    padding: 20px;
+    padding-top: 20px;
     padding-bottom: 10px;
+    text-align: left;
 }
-header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
+
+header nav ul .investorsrelation:hover .investorsrelationdropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+    animation-duration: .5s;
 }
-.investorsrelationdropdowncont .items div:hover{
+
+.investorsrelationdropdowncont .items div:hover {
     background-color: #5e5e5e11;
 }
 
 /* ----banner---- */
-.banner{
+.banner {
     height: 500px;
     width: 100%;
     background-image: url(../SecondPage/images/businessbanner.png);
@@ -336,24 +410,27 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     background-size: cover;
     padding-top: 100px;
 }
-.banner .Simplebankingssolution{
+
+.banner .Simplebankingssolution {
     background-color: rgba(255, 255, 255, 0.8);
     min-height: 30px;
     padding-bottom: 20px;
     width: 35%;
     margin-left: 100px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     color: #424a52;
     padding-top: 40px;
     position: absolute;
 }
-.banner .Simplebankingssolution h1{
+
+.banner .Simplebankingssolution h1 {
     margin-left: 40px;
     margin-right: 40px;
     font-size: 2.5rem;
     font-weight: 100;
 }
-.banner .Simplebankingssolution p{
+
+.banner .Simplebankingssolution p {
     margin-left: 40px;
     margin-right: 40px;
     font-size: 1.2;
@@ -361,11 +438,13 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     margin-top: 10px;
     line-height: 25px;
 }
-.banner .Simplebankingssolution a{
+
+.banner .Simplebankingssolution a {
     text-decoration: none;
     width: 200px;
 }
-.banner .Simplebankingssolution a button{
+
+.banner .Simplebankingssolution a button {
     height: 60px;
     width: 200px;
     margin-left: 40px;
@@ -381,38 +460,44 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     justify-content: space-evenly;
     margin-bottom: 10px;
 }
-.banner .Simplebankingssolution a button:hover{
+
+.banner .Simplebankingssolution a button:hover {
     cursor: pointer;
     background-color: #ab3d04;
 }
 
-.business-cards{
+.business-cards {
     width: 100%;
     background-color: #f7f8f8;
     min-height: 400px;
     padding-top: 50px;
 }
-.business-cards .divcont{
+
+.business-cards .divcont {
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
 }
-.business-cards .divcont a{
+
+.business-cards .divcont a {
     height: 200px;
     background-color: white;
     width: 12%;
     box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.316);
     text-decoration: none;
     color: #424a52;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
 }
-.business-cards .divcont .card1{
+
+.business-cards .divcont .card1 {
     margin-left: 100px;
 }
-.business-cards .divcont .card6{
+
+.business-cards .divcont .card6 {
     margin-right: 100px;
 }
-.business-cards .divcont a div{
+
+.business-cards .divcont a div {
     font-weight: 550;
     height: 100%;
     display: flex;
@@ -420,15 +505,17 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     align-items: center;
     font-size: 15px;
 }
-.business-cards .divcont a:hover{
+
+.business-cards .divcont a:hover {
     color: #dd4f05;
 }
 
-.hero{
+.hero {
     min-height: 600px;
     background-color: white;
 }
-.BusinessAccountsdiv{
+
+.BusinessAccountsdiv {
     width: 80%;
     margin: auto;
     min-height: 300px;
@@ -437,26 +524,30 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     border-bottom: thin solid rgba(0, 0, 0, 0.186);
     padding-bottom: 50px;
 }
-.BusinessAccountsh1{
+
+.BusinessAccountsh1 {
     min-height: 300px;
     width: 33.3%;
 }
-.BusinessAccountsdiv .BusinessAccountsh1 h1{
-    font-family: acumin-pro,sans-serif;
+
+.BusinessAccountsdiv .BusinessAccountsh1 h1 {
+    font-family: acumin-pro, sans-serif;
     font-size: 2em;
     color: rgba(0, 0, 0, 0.572);
     margin-top: 40px;
 }
-.BusinessAccountsdiv .BusinessAccountsh1 p{
+
+.BusinessAccountsdiv .BusinessAccountsh1 p {
     font-size: 1.2;
     font-weight: 500;
     margin-top: 10px;
     line-height: 25px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     color: rgba(0, 0, 0, 0.32);
     margin-top: 20px;
 }
-.BusinessAccountsdiv .BusinessAccountsh1 button{
+
+.BusinessAccountsdiv .BusinessAccountsh1 button {
     background-color: #dd4f05;
     width: 200px;
     height: 50px;
@@ -471,15 +562,18 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     margin-top: 20px;
     cursor: pointer;
 }
-.BusinessAccountsdiv .BusinessAccountsh1 button:hover{
+
+.BusinessAccountsdiv .BusinessAccountsh1 button:hover {
     background-color: #ab3d04;
 }
-.BusinessAccountslists{
+
+.BusinessAccountslists {
     min-height: 300px;
     width: 33.3%;
     margin-top: 50px;
 }
-.BusinessAccountslists div{
+
+.BusinessAccountslists div {
     height: 60px;
     border: thin solid rgba(0, 0, 0, 0.483);
     margin-top: 15px;
@@ -488,19 +582,22 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     justify-content: start;
     padding-left: 50px;
     font-size: 16px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-weight: 600;
     color: #dd4f05;
     box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05);
 }
-.BusinessAccountslists div:hover{
+
+.BusinessAccountslists div:hover {
     color: #ab3d04;
     cursor: pointer;
 }
-.BusinessAccountslists button{
+
+.BusinessAccountslists button {
     display: none;
 }
-.BusinessAccountsimage{
+
+.BusinessAccountsimage {
     width: 30%;
     height: 200px;
     background-image: url(../SecondPage/images/Businessaccount.webp);
@@ -510,7 +607,8 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     margin-left: 30px;
     margin-top: 80px;
 }
-.CorporateCardsdiv{
+
+.CorporateCardsdiv {
     width: 80%;
     margin: auto;
     min-height: 300px;
@@ -519,26 +617,30 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     border-bottom: thin solid rgba(0, 0, 0, 0.186);
     padding-bottom: 50px;
 }
-.CorporateCardsh1{
+
+.CorporateCardsh1 {
     min-height: 300px;
     width: 33.3%;
 }
-.CorporateCardsdiv .CorporateCardsh1 h1{
-    font-family: acumin-pro,sans-serif;
+
+.CorporateCardsdiv .CorporateCardsh1 h1 {
+    font-family: acumin-pro, sans-serif;
     font-size: 2em;
     color: rgba(0, 0, 0, 0.572);
     margin-top: 40px;
 }
-.CorporateCardsdiv .CorporateCardsh1 p{
+
+.CorporateCardsdiv .CorporateCardsh1 p {
     font-size: 1.2;
     font-weight: 500;
     margin-top: 10px;
     line-height: 25px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     color: rgba(0, 0, 0, 0.32);
     margin-top: 20px;
 }
-.CorporateCardsdiv .CorporateCardsh1 button{
+
+.CorporateCardsdiv .CorporateCardsh1 button {
     background-color: #dd4f05;
     width: 200px;
     height: 50px;
@@ -553,15 +655,18 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     margin-top: 20px;
     cursor: pointer;
 }
-.countrybuttondiv .CorporateCardsh1 button:hover{
+
+.countrybuttondiv .CorporateCardsh1 button:hover {
     background-color: #ab3d04;
 }
-.CorporateCardslists{
+
+.CorporateCardslists {
     min-height: 300px;
     width: 33.3%;
     margin-top: 50px;
 }
-.CorporateCardslists div{
+
+.CorporateCardslists div {
     height: 60px;
     border: thin solid rgba(0, 0, 0, 0.483);
     margin-top: 15px;
@@ -570,19 +675,22 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     justify-content: start;
     padding-left: 50px;
     font-size: 16px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-weight: 600;
     color: #dd4f05;
-    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05); 
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05);
 }
-.CorporateCardslists div:hover{
+
+.CorporateCardslists div:hover {
     color: #ab3d04;
     cursor: pointer;
 }
-.CorporateCardslists button{
+
+.CorporateCardslists button {
     display: none;
 }
-.CorporateCardsimage{
+
+.CorporateCardsimage {
     width: 30%;
     height: 250px;
     background-image: url(../SecondPage/images/placeholder-banner-17.jpg);
@@ -592,35 +700,40 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     margin-left: 30px;
     margin-top: 50px;
 }
-.LoansAdvancesdiv{
+
+.LoansAdvancesdiv {
     width: 80%;
     margin: auto;
     min-height: 300px;
     margin-top: 20px;
     display: flex;
     border-bottom: thin solid rgba(0, 0, 0, 0.186);
-    padding-bottom: 50px;   
+    padding-bottom: 50px;
 }
-.LoansAdvancesh1{
+
+.LoansAdvancesh1 {
     min-height: 300px;
     width: 33.3%;
 }
-.LoansAdvancesdiv .LoansAdvancesh1 h1{
+
+.LoansAdvancesdiv .LoansAdvancesh1 h1 {
     font-size: 2em;
     color: rgba(0, 0, 0, 0.572);
     margin-top: 40px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
 }
-.LoansAdvancesdiv .LoansAdvancesh1 p{
+
+.LoansAdvancesdiv .LoansAdvancesh1 p {
     font-size: 1.2;
     font-weight: 500;
     margin-top: 10px;
     line-height: 25px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     color: rgba(0, 0, 0, 0.32);
     margin-top: 20px;
 }
-.LoansAdvancesdiv .LoansAdvancesh1 button{
+
+.LoansAdvancesdiv .LoansAdvancesh1 button {
     background-color: #dd4f05;
     width: 200px;
     height: 50px;
@@ -633,17 +746,20 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     justify-content: center;
     box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
     margin-top: 20px;
-    cursor: pointer; 
+    cursor: pointer;
 }
-.LoansAdvancesdiv .LoansAdvancesh1 button:hover{
+
+.LoansAdvancesdiv .LoansAdvancesh1 button:hover {
     background-color: #ab3d04;
 }
-.LoansAdvanceslists{
+
+.LoansAdvanceslists {
     min-height: 300px;
     width: 33.3%;
     margin-top: 50px;
 }
-.LoansAdvanceslists div{
+
+.LoansAdvanceslists div {
     height: 60px;
     border: thin solid rgba(0, 0, 0, 0.483);
     margin-top: 15px;
@@ -652,19 +768,22 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     justify-content: start;
     padding-left: 50px;
     font-size: 16px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-weight: 600;
     color: #dd4f05;
     box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05);
 }
-.LoansAdvanceslists div:hover{
+
+.LoansAdvanceslists div:hover {
     color: #ab3d04;
     cursor: pointer;
 }
-.LoansAdvanceslists button{
+
+.LoansAdvanceslists button {
     display: none;
 }
-.LoansAdvancesimage{
+
+.LoansAdvancesimage {
     width: 30%;
     height: 300px;
     background-image: url(../SecondPage/images/business_loans\ and\ advances.webp);
@@ -674,7 +793,8 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     margin-left: 30px;
     margin-top: 80px;
 }
-.BusinessServicesdiv{
+
+.BusinessServicesdiv {
     width: 80%;
     margin: auto;
     min-height: 300px;
@@ -683,26 +803,30 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     border-bottom: thin solid rgba(0, 0, 0, 0.186);
     padding-bottom: 50px;
 }
-.BusinessServicesh1{
+
+.BusinessServicesh1 {
     min-height: 300px;
     width: 33.3%;
 }
-.BusinessServicesdiv .BusinessServicesh1 h1{
+
+.BusinessServicesdiv .BusinessServicesh1 h1 {
     font-size: 2em;
     color: rgba(0, 0, 0, 0.572);
     margin-top: 40px;
-    font-family: acumin-pro,sans-serif; 
+    font-family: acumin-pro, sans-serif;
 }
-.BusinessServicesdiv .BusinessServicesh1 p{
+
+.BusinessServicesdiv .BusinessServicesh1 p {
     font-size: 1.2;
     font-weight: 500;
     margin-top: 10px;
     line-height: 25px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     color: rgba(0, 0, 0, 0.32);
     margin-top: 20px;
 }
-.BusinessServicesdiv .BusinessServicesh1 button{
+
+.BusinessServicesdiv .BusinessServicesh1 button {
     background-color: #dd4f05;
     width: 200px;
     height: 50px;
@@ -717,15 +841,18 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     margin-top: 20px;
     cursor: pointer;
 }
-.BusinessServicesdiv .BusinessServicesh1 button:hover{
+
+.BusinessServicesdiv .BusinessServicesh1 button:hover {
     background-color: #ab3d04;
 }
-.BusinessServiceslists{
+
+.BusinessServiceslists {
     min-height: 300px;
     width: 33.3%;
     margin-top: 50px;
 }
-.BusinessServiceslists div{
+
+.BusinessServiceslists div {
     height: 60px;
     border: thin solid rgba(0, 0, 0, 0.483);
     margin-top: 15px;
@@ -734,19 +861,22 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     justify-content: start;
     padding-left: 50px;
     font-size: 16px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-weight: 600;
     color: #dd4f05;
     box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05);
 }
-.BusinessServiceslists div:hover{
+
+.BusinessServiceslists div:hover {
     color: #ab3d04;
     cursor: pointer;
 }
-.BusinessServiceslists button{
+
+.BusinessServiceslists button {
     display: none;
 }
-.BusinessServicesimage{
+
+.BusinessServicesimage {
     width: 30%;
     height: 300px;
     background-image: url(../SecondPage/images/Business\ services.webp);
@@ -756,18 +886,21 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     margin-left: 30px;
     margin-top: 10px;
 }
-.InternationalTrade{
+
+.InternationalTrade {
     width: 100%;
     min-height: 500px;
     background-color: #f7f8f8;
     display: flex;
 }
-.InternationalTrade .InternationalTradetext{
+
+.InternationalTrade .InternationalTradetext {
     width: 30%;
     margin-left: 120px;
     margin-top: 100px;
 }
-.InternationalTrade .InternationalTradetext h1{
+
+.InternationalTrade .InternationalTradetext h1 {
     font-size: 2em;
     color: #696f73;
     margin-top: 20px;
@@ -775,7 +908,8 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     margin-left: 20px;
     margin-right: 100px;
 }
-.InternationalTrade .InternationalTradetext p{
+
+.InternationalTrade .InternationalTradetext p {
     font-size: 1.2;
     font-weight: 600;
     line-height: 25px;
@@ -785,7 +919,8 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     margin-left: 20px;
     margin-right: 100px;
 }
-.InternationalTrade .InternationalTradetext button{
+
+.InternationalTrade .InternationalTradetext button {
     background-color: #dd4f05;
     padding: 10px;
     border: none;
@@ -800,7 +935,8 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     cursor: pointer;
     margin-right: 100px;
 }
-.InternationalTradeimage{
+
+.InternationalTradeimage {
     height: 316px;
     width: 50%;
     margin-top: 120px;
@@ -809,7 +945,8 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.InternationalTrade .hidden{
+
+.InternationalTrade .hidden {
     background-color: #dd4f05;
     padding: 10px;
     border: none;
@@ -825,18 +962,21 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     margin-right: 10px;
     visibility: hidden;
 }
-.SolutionsByBusinessType{
+
+.SolutionsByBusinessType {
     min-height: 600px;
     background-color: white;
 }
-.SolutionsByBusinessType h1{
-    font-family: acumin-pro,sans-serif;
+
+.SolutionsByBusinessType h1 {
+    font-family: acumin-pro, sans-serif;
     font-size: 2em;
     color: rgba(0, 0, 0, 0.572);
     margin-top: 100px;
     margin-left: 500px;
 }
-.SolutionsByBusinessType .cardcont{
+
+.SolutionsByBusinessType .cardcont {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -844,7 +984,8 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     min-height: 450px;
     position: relative;
 }
-.SolutionsByBusinessType .cardcont div{
+
+.SolutionsByBusinessType .cardcont div {
     min-height: 100px;
     width: 30%;
     border: thin solid rgba(0, 0, 0, 0.32);
@@ -852,31 +993,35 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     box-shadow: 5px 5px 50px 2px rgba(0, 0, 0, 0.093);
     padding: 20px;
 }
-.SolutionsByBusinessType .cardcont div svg{
+
+.SolutionsByBusinessType .cardcont div svg {
     height: 80px;
     fill: #dd4f05;
     margin-left: 160px;
     margin-top: 50px;
 }
-.SolutionsByBusinessType .cardcont div:nth-of-type(1) h1{
+
+.SolutionsByBusinessType .cardcont div:nth-of-type(1) h1 {
     margin-left: 100px;
     margin-top: 20px;
     margin-bottom: 25px;
     font-size: 2em;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-weight: 600;
     color: #424a52;
 }
-.SolutionsByBusinessType .cardcont div:nth-of-type(1) p{
+
+.SolutionsByBusinessType .cardcont div:nth-of-type(1) p {
     margin-left: 60px;
     margin-top: 10px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-size: .9em;
     font-weight: 600;
     color: #696f73;
     margin-bottom: 25px;
 }
-.SolutionsByBusinessType .cardcont div:nth-of-type(1) button{
+
+.SolutionsByBusinessType .cardcont div:nth-of-type(1) button {
     background-color: #dd4f05;
     padding: 10px;
     border: none;
@@ -887,29 +1032,32 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     font-weight: 600;
     justify-content: center;
     box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
-    cursor: pointer; 
+    cursor: pointer;
     margin-left: 100px;
     margin-bottom: 45px;
 }
-.SolutionsByBusinessType .cardcont div:nth-of-type(2) h1{
+
+.SolutionsByBusinessType .cardcont div:nth-of-type(2) h1 {
     margin-left: 60px;
     margin-top: 20px;
     margin-bottom: 25px;
     font-size: 2em;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-weight: 600;
     color: #424a52;
 }
-.SolutionsByBusinessType .cardcont div:nth-of-type(2) p{
+
+.SolutionsByBusinessType .cardcont div:nth-of-type(2) p {
     margin-left: 50px;
     margin-top: 10px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-size: .9em;
     font-weight: 600;
     color: #696f73;
     margin-bottom: 20px;
 }
-.SolutionsByBusinessType .cardcont div:nth-of-type(2) button{
+
+.SolutionsByBusinessType .cardcont div:nth-of-type(2) button {
     background-color: #dd4f05;
     padding: 10px;
     border: none;
@@ -920,29 +1068,32 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     font-weight: 600;
     justify-content: center;
     box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
-    cursor: pointer; 
+    cursor: pointer;
     margin-left: 100px;
     margin-bottom: 30px;
 }
-.SolutionsByBusinessType .cardcont div:nth-of-type(3) h1{
+
+.SolutionsByBusinessType .cardcont div:nth-of-type(3) h1 {
     margin-left: 40px;
     margin-top: 20px;
     margin-bottom: 25px;
     font-size: 2em;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-weight: 600;
     color: #424a52;
 }
-.SolutionsByBusinessType .cardcont div:nth-of-type(3) p{
+
+.SolutionsByBusinessType .cardcont div:nth-of-type(3) p {
     margin-left: 46px;
     margin-top: 10px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-size: .9em;
     font-weight: 600;
     color: #696f73;
     margin-bottom: 20px;
 }
-.SolutionsByBusinessType .cardcont div:nth-of-type(3) button{
+
+.SolutionsByBusinessType .cardcont div:nth-of-type(3) button {
     background-color: #dd4f05;
     padding: 10px;
     border: none;
@@ -953,32 +1104,36 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     font-weight: 600;
     justify-content: center;
     box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
-    cursor: pointer; 
+    cursor: pointer;
     margin-left: 100px;
     margin-bottom: 48px;
 }
-.icons{
-   
+
+.icons {
+
     margin-top: 150px;
     background-image: linear-gradient(white, #f7f8f8);
     height: 150px;
 }
-.icons .svgcont{
+
+.icons .svgcont {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: auto;
     width: 80%;
 }
-.icons .svgcont a{
+
+.icons .svgcont a {
     height: 100px;
     width: 120px;
     text-decoration: none;
     color: #696f73;
     font-weight: 600;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
 }
-.icons .svgcont a .svg{
+
+.icons .svgcont a .svg {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -989,28 +1144,35 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     justify-content: center;
     background-color: #edf0f2;
 }
-.icons .svgcont a div svg{
+
+.icons .svgcont a div svg {
     height: 34px;
     margin: auto;
 }
-.icons .svgcont a:hover .svg{
+
+.icons .svgcont a:hover .svg {
     background-color: #dd4f05;
 }
-.icons .svgcont a:hover div svg{
+
+.icons .svgcont a:hover div svg {
     fill: white;
 }
-.svgsubtitle{
+
+.svgsubtitle {
     margin-top: 100px;
     text-align: center;
 }
-#accordionFlushExample{
+
+#accordionFlushExample {
     display: none;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
 }
-footer{
+
+footer {
     min-height: 300px;
 }
-.footerlinks{
+
+.footerlinks {
     display: flex;
     width: 80%;
     margin: auto;
@@ -1019,91 +1181,108 @@ footer{
     border-bottom: thin solid rgba(0, 0, 0, 0.296);
     margin-bottom: 20px;
 }
-.footerlinks ul{
+
+.footerlinks ul {
     list-style-type: none;
     font-size: 1em;
     color: #696f73;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-weight: 600;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
 }
-.footerlinks ul li{
+
+.footerlinks ul li {
     font-size: .8em;
     font-weight: 100;
     line-height: 1;
     margin-top: 20px;
 }
-.footerlinks ul li:nth-of-type(1){
+
+.footerlinks ul li:nth-of-type(1) {
     margin-top: 20px;
 }
-.footerlinks ul span{
+
+.footerlinks ul span {
     display: none;
 }
-.footerlinks ul li:hover{
+
+.footerlinks ul li:hover {
     color: #dd4f05;
     cursor: pointer;
 }
-.footercontactus{
+
+.footercontactus {
     display: flex;
     width: 80%;
     align-items: center;
     min-height: 100px;
     margin: auto;
-    
+
 }
-div.numbers{
+
+div.numbers {
     font-size: 1.2;
     font-weight: 600;
     line-height: 2.5;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     color: rgba(0, 0, 0, 0.561);
     flex-wrap: wrap;
     display: flex;
     width: 90%;
 }
-.footercontactus span{
+
+.footercontactus span {
     display: none;
 }
-.footercontactus p{
+
+.footercontactus p {
     margin-left: 40px;
 }
-.footercontactus p:nth-of-type(6){
+
+.footercontactus p:nth-of-type(6) {
     margin-left: 70px;
 }
-.copyright{
+
+.copyright {
     width: 100%;
     min-height: 100px;
     background-color: #434a51;
     color: rgba(255, 255, 255, 0.776);
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     display: flex;
     align-items: center;
 }
-.copyright div{
+
+.copyright div {
     font-size: .8em;
     margin-left: 100px;
 }
-.copyright ul{
+
+.copyright ul {
     list-style-type: none;
     display: flex;
     margin-left: 30px;
     font-size: .8em;
 }
-.copyright ul li{
+
+.copyright ul li {
     margin-left: 20px;
 }
-.copyright ul li:hover{
+
+.copyright ul li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-.copyright .copysvg{
+
+.copyright .copysvg {
     display: flex;
     margin-left: 100px;
     margin-right: 20px;
 }
-.copyright .copysvg div{
+
+.copyright .copysvg div {
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -1113,194 +1292,240 @@ div.numbers{
     align-items: center;
     justify-content: center;
 }
-.copyright .copysvg div svg{
+
+.copyright .copysvg div svg {
     fill: #434a51;
 }
-.copyright .copysvg div:hover{
+
+.copyright .copysvg div:hover {
     background-color: #8f969a;
     cursor: pointer;
 }
 
 
-@media(max-width: 1075px){
-    .header2 nav ul li a{
+@media(max-width: 1075px) {
+    .header2 nav ul li a {
         font-size: .7em;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(1) p{
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(1) p {
         font-size: 1.3em;
 
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(2) p{
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(2) p {
         font-size: 1.2em;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(3){
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(3) {
         font-size: 1.1em;
     }
-    .footerlinks{
+
+    .footerlinks {
         width: 90%;
     }
 }
 
-@media (max-width:1024px){
-    .header2 nav ul li{
+@media (max-width:1024px) {
+    .header2 nav ul li {
         font-size: .9em;
     }
 }
 
-@media(max-width: 997px){
-    .alert h1{
+@media(max-width: 997px) {
+    .alert h1 {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .alert p{
+
+    .alert p {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .header1 a .skew-et div .hide{
+
+    .header1 a .skew-et div .hide {
         display: none;
     }
-    .header1 a .skew-et{
+
+    .header1 a .skew-et {
         width: 150px;
     }
-    .header1 nav{
+
+    .header1 nav {
         width: 50%;
     }
-    .header2 nav ul li a{
+
+    .header2 nav ul li a {
         font-size: .6em;
     }
-    .header2 nav ul{
+
+    .header2 nav ul {
         justify-content: space-evenly;
     }
 
-    .business-cards .divcont a{
+    .business-cards .divcont a {
         width: 20%;
     }
-    .business-cards .divcont .card1{
+
+    .business-cards .divcont .card1 {
         margin-left: 10px;
     }
-    .business-cards .divcont .card4{
+
+    .business-cards .divcont .card4 {
         margin-right: 10px;
     }
-    .business-cards .divcont a:nth-of-type(5){
+
+    .business-cards .divcont a:nth-of-type(5) {
         display: none;
     }
-    .business-cards .divcont a:nth-of-type(6){
+
+    .business-cards .divcont a:nth-of-type(6) {
         display: none;
     }
-    .BusinessAccountsdiv{
+
+    .BusinessAccountsdiv {
         width: 90%;
     }
-    .BusinessAccountsh1{
+
+    .BusinessAccountsh1 {
         width: 50%;
     }
-    .BusinessAccountslists{
+
+    .BusinessAccountslists {
         width: 50%;
     }
-    .BusinessAccountsimage{
-        display: none;  
+
+    .BusinessAccountsimage {
+        display: none;
     }
-    .CorporateCardsdiv{
+
+    .CorporateCardsdiv {
         width: 90%;
     }
-    .CorporateCardsh1{
+
+    .CorporateCardsh1 {
         width: 50%;
     }
-    .CorporateCardslists{
+
+    .CorporateCardslists {
         width: 50%;
     }
-    .CorporateCardsimage{
-        display: none;  
+
+    .CorporateCardsimage {
+        display: none;
     }
-    .LoansAdvancesdiv{
+
+    .LoansAdvancesdiv {
         width: 90%;
     }
-    .LoansAdvancesh1{
+
+    .LoansAdvancesh1 {
         width: 50%;
     }
-    .LoansAdvanceslists{
+
+    .LoansAdvanceslists {
         width: 50%;
     }
-    .LoansAdvancesimage{
-        display: none;  
+
+    .LoansAdvancesimage {
+        display: none;
     }
-    
-    .BusinessServicesdiv{
+
+    .BusinessServicesdiv {
         width: 90%;
     }
-    .BusinessServicesh1{
+
+    .BusinessServicesh1 {
         width: 50%;
     }
-    .BusinessServiceslists{
+
+    .BusinessServiceslists {
         width: 50%;
     }
-    .BusinessServicesimage{
-        display: none;  
+
+    .BusinessServicesimage {
+        display: none;
     }
-    .InternationalTrade .InternationalTradetext{
+
+    .InternationalTrade .InternationalTradetext {
         width: 50%;
     }
-    .InternationalTradeimage{
+
+    .InternationalTradeimage {
         width: 50%;
     }
-    .SolutionsByBusinessType h1{
+
+    .SolutionsByBusinessType h1 {
         margin-left: 260px;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(3){
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(3) {
         display: none;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(2){
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(2) {
         width: 40%;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(1){
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(1) {
         width: 40%;
         margin-left: 80px;
     }
-    .icons .svgcont a .svg{
+
+    .icons .svgcont a .svg {
         height: 40px;
         width: 40px;
     }
-    .icons .svgcont a div svg{
+
+    .icons .svgcont a div svg {
         height: 24px;
         margin: auto;
     }
-    .svgsubtitle{
+
+    .svgsubtitle {
         font-size: .8em;
     }
 }
 
 
-@media(max-width: 949px){
-    .header2{
+@media(max-width: 949px) {
+    .header2 {
         display: none;
     }
-    .svgsubtitle{
+
+    .svgsubtitle {
         font-size: .68em;
     }
 }
 
-@media(max-width:768px){
-    .header1{
+@media(max-width:768px) {
+    .header1 {
         height: 150px;
         display: block;
     }
-    .header1 nav{
+
+    .header1 nav {
         display: none;
     }
-    .header1 a .skew-et{
+
+    .header1 a .skew-et {
         display: none;
     }
-    .header1 .px768{
+
+    .header1 .px768 {
         display: flex;
         align-items: center;
         width: 100%;
         height: 70px;
         border-bottom: thin solid rgba(0, 0, 0, 0.202);
     }
-    .header1 .px768 a{
+
+    .header1 .px768 a {
         margin-left: 30px;
         position: relative;
     }
-    .header1 .px768 button{
+
+    .header1 .px768 button {
         width: 15%;
         min-height: 40px;
         border-radius: 19px;
@@ -1313,21 +1538,23 @@ div.numbers{
         color: #fae5da;
         font-weight: 600;
         letter-spacing: 1px;
-        font-family: acumin-pro,sans-serif;
+        font-family: acumin-pro, sans-serif;
         margin-left: 30px;
     }
-    .header1 .hiddenpersonal{
+
+    .header1 .hiddenpersonal {
         display: block;
         color: #dd4f05;
         font-size: 18px;
         font-weight: 600;
-        font-family: acumin-pro,sans-serif;
+        font-family: acumin-pro, sans-serif;
         display: flex;
         align-items: center;
         padding-left: 30px;
         margin-top: 20px;
     }
-    .header1 .px768 div{
+
+    .header1 .px768 div {
         height: 60px;
         width: 60px;
         background-image: url(../images/Capture.PNG);
@@ -1336,17 +1563,19 @@ div.numbers{
         margin-left: 80%;
         position: absolute;
     }
-    .header2{
+
+    .header2 {
         display: none;
     }
 
-    .banner{
+    .banner {
         width: 95%;
         margin: auto;
         margin-top: -20px;
         height: 150px;
     }
-    .banner .Simplebankingssolution{
+
+    .banner .Simplebankingssolution {
         background-color: transparent;
         position: absolute;
         width: 95%;
@@ -1355,235 +1584,280 @@ div.numbers{
         height: 100px;
         margin-top: 70px;
     }
-    .banner .Simplebankingssolution h1{
+
+    .banner .Simplebankingssolution h1 {
         font-size: 1.7em;
         font-weight: 600;
         margin-left: 10px;
     }
-    .banner .Simplebankingssolution p{
+
+    .banner .Simplebankingssolution p {
         font-size: 16px;
         font-weight: 550;
         margin-left: 10px;
     }
-    .banner .Simplebankingssolution a button{
+
+    .banner .Simplebankingssolution a button {
         width: 150px;
         height: 50px;
         margin-left: 10px;
     }
-    .business-cards{
+
+    .business-cards {
         display: none;
     }
-    
-    .BusinessAccountsdiv{
+
+    .BusinessAccountsdiv {
         width: 90%;
         display: block;
         margin-top: 220px;
     }
-    .BusinessAccountsh1{
+
+    .BusinessAccountsh1 {
         width: 100%;
         min-height: 100px;
     }
-    .BusinessAccountsdiv .BusinessAccountsh1 button{
+
+    .BusinessAccountsdiv .BusinessAccountsh1 button {
         display: none;
     }
-    .BusinessAccountslists{
+
+    .BusinessAccountslists {
         width: 100%;
     }
-    .BusinessAccountslists button{
-    background-color: #dd4f05;
-    width: 200px;
-    height: 50px;
-    border: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 600;
-    justify-content: center;
-    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
-    margin-top: 20px;
-    cursor: pointer;
+
+    .BusinessAccountslists button {
+        background-color: #dd4f05;
+        width: 200px;
+        height: 50px;
+        border: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+        margin-top: 20px;
+        cursor: pointer;
     }
 
-    .CorporateCardsdiv{
+    .CorporateCardsdiv {
         width: 90%;
         display: block;
     }
-    .CorporateCardsh1{
+
+    .CorporateCardsh1 {
         width: 100%;
         min-height: 100px;
     }
-    .CorporateCardsdiv .CorporateCardsh1 button{
+
+    .CorporateCardsdiv .CorporateCardsh1 button {
         display: none;
     }
-    .CorporateCardslists{
+
+    .CorporateCardslists {
         width: 100%;
     }
-    .CorporateCardslists button{
-    background-color: #dd4f05;
-    width: 200px;
-    height: 50px;
-    border: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 600;
-    justify-content: center;
-    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
-    margin-top: 20px;
-    cursor: pointer;
+
+    .CorporateCardslists button {
+        background-color: #dd4f05;
+        width: 200px;
+        height: 50px;
+        border: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+        margin-top: 20px;
+        cursor: pointer;
     }
 
-    .LoansAdvancesdiv{
+    .LoansAdvancesdiv {
         width: 90%;
         display: block;
     }
-    .LoansAdvancesh1{
+
+    .LoansAdvancesh1 {
         width: 100%;
         min-height: 100px;
     }
-    .LoansAdvancesdiv .LoansAdvancesh1 button{
+
+    .LoansAdvancesdiv .LoansAdvancesh1 button {
         display: none;
     }
-    .LoansAdvanceslists{
+
+    .LoansAdvanceslists {
         width: 100%;
     }
-    .LoansAdvanceslists button{
-    background-color: #dd4f05;
-    width: 200px;
-    height: 50px;
-    border: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 600;
-    justify-content: center;
-    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
-    margin-top: 20px;
-    cursor: pointer;
+
+    .LoansAdvanceslists button {
+        background-color: #dd4f05;
+        width: 200px;
+        height: 50px;
+        border: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+        margin-top: 20px;
+        cursor: pointer;
     }
 
-    .BusinessServicesdiv{
+    .BusinessServicesdiv {
         width: 90%;
         display: block;
     }
-    .BusinessServicesh1{
+
+    .BusinessServicesh1 {
         width: 100%;
         min-height: 100px;
     }
-    .BusinessServicesdiv .BusinessServicesh1 button{
+
+    .BusinessServicesdiv .BusinessServicesh1 button {
         display: none;
     }
-    .BusinessServiceslists{
+
+    .BusinessServiceslists {
         width: 100%;
     }
-    .BusinessServiceslists button{
-    background-color: #dd4f05;
-    width: 200px;
-    height: 50px;
-    border: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 600;
-    justify-content: center;
-    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
-    margin-top: 20px;
-    cursor: pointer;
+
+    .BusinessServiceslists button {
+        background-color: #dd4f05;
+        width: 200px;
+        height: 50px;
+        border: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.096);
+        margin-top: 20px;
+        cursor: pointer;
     }
-    .InternationalTrade{
+
+    .InternationalTrade {
         display: block;
 
     }
-    .InternationalTradeimage{
+
+    .InternationalTradeimage {
         width: 80%;
         margin-top: 0px;
         margin: auto;
     }
-    .InternationalTrade .InternationalTradetext{
+
+    .InternationalTrade .InternationalTradetext {
         width: 80%;
         margin: auto;
     }
-    .InternationalTrade .hidden{
+
+    .InternationalTrade .hidden {
         visibility: visible;
         margin-left: 50px;
     }
-    .InternationalTrade .InternationalTradetext button{
+
+    .InternationalTrade .InternationalTradetext button {
         visibility: hidden;
     }
-    .SolutionsByBusinessType{
+
+    .SolutionsByBusinessType {
         margin-left: -60px;
     }
-    .SolutionsByBusinessType .cardcont{
+
+    .SolutionsByBusinessType .cardcont {
         padding: 20px;
     }
-    .SolutionsByBusinessType .cardcont div svg{
+
+    .SolutionsByBusinessType .cardcont div svg {
         margin-left: 60px;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(1) h1{
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(1) h1 {
         margin-left: 20px;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(1) p{
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(1) p {
         margin-left: 20px;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(1) button{
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(1) button {
         margin-left: 20px;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(2) svg{
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(2) svg {
         margin-top: 70px;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(2) h1{
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(2) h1 {
         margin-left: 20px;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(2) p{
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(2) p {
         margin-left: 20px;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(2) button{
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(2) button {
         margin-left: 20px;
     }
-    .icons{
+
+    .icons {
         display: none;
     }
-    #accordionFlushExample{
+
+    #accordionFlushExample {
         display: block;
         border-bottom: thin solid rgba(0, 0, 0, 0.382);
         width: 80%;
         margin: auto;
     }
-    .footerlinks{
+
+    .footerlinks {
         display: none;
         border: none;
     }
-    .numbers p{
+
+    .numbers p {
         display: none;
     }
-    .footercontactus{
+
+    .footercontactus {
         width: 80%;
     }
-    .footercontactus span{
+
+    .footercontactus span {
         display: inline;
         align-items: center;
         position: absolute;
         left: 85%;
     }
-    .copyright{
+
+    .copyright {
         display: grid;
         justify-content: center;
     }
-    .copyright .copysvg{
+
+    .copyright .copysvg {
         margin: auto;
         position: relative;
         top: -100px;
     }
-    .copyright div{
+
+    .copyright div {
         margin: auto;
         position: relative;
         top: 50px;
     }
-    .copyright ul{
+
+    .copyright ul {
         margin: auto;
         position: relative;
         top: 50px;
@@ -1592,44 +1866,52 @@ div.numbers{
 }
 
 
-@media(max-width: 585px){
-    .header1 .px768 button{
+@media(max-width: 585px) {
+    .header1 .px768 button {
         font-size: .7em;
         width: 100px;
     }
-    .header1 .px768 div{
+
+    .header1 .px768 div {
         width: 40px;
         height: 40px;
     }
-    .SolutionsByBusinessType{
+
+    .SolutionsByBusinessType {
         margin-top: 100px;
         margin-left: -190px;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(2){
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(2) {
         display: none;
     }
-    .SolutionsByBusinessType .cardcont div:nth-of-type(1){
+
+    .SolutionsByBusinessType .cardcont div:nth-of-type(1) {
         width: auto;
         margin: auto;
         margin-left: 230px;
-    
+
     }
-    .footerlinks ul{
+
+    .footerlinks ul {
         font-size: .7em;
     }
-    .copyright div{
+
+    .copyright div {
         display: none;
     }
 }
 
-@media(max-width: 320px){
-    .header1 .px768 button{
+@media(max-width: 320px) {
+    .header1 .px768 button {
         display: none;
     }
-    .copyright ul{
+
+    .copyright ul {
         display: none;
     }
-    .copyright .copysvg{
+
+    .copyright .copysvg {
         top: -50px;
     }
 }

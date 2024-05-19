@@ -1,19 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.alert h1{
+
+.alert h1 {
     color: #dd4f05;
     font-size: 19px;
     font-weight: 700;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     margin-left: 80px;
     margin-right: 80px;
     padding-top: 30px;
     line-height: 1.2;
 }
-.alert p{
+
+.alert p {
     font-family: acumin-pro, sans-serif;
     margin-left: 80px;
     margin-right: 80px;
@@ -25,24 +27,28 @@
     margin-bottom: 30px;
 }
 
-.header1{
+.header1 {
     width: 100%;
     height: 50px;
     border-top: 1px solid #dd4f05;
     display: flex;
 }
-.px768{
+
+.px768 {
     display: none;
 }
-.hiddenpersonal{
+
+.hiddenpersonal {
     display: none;
 }
-.header1 nav{
+
+.header1 nav {
     background-color: #dd4f05;
     height: 100%;
     width: 600px;
 }
-.header1 nav .headerlinkdiv{
+
+.header1 nav .headerlinkdiv {
     width: 90%;
     margin: auto;
     display: flex;
@@ -50,14 +56,16 @@
     justify-content: space-evenly;
     margin-top: 10px;
 }
-.header1 nav .headerlinkdiv .countrybuttondiv a button{
+
+.header1 nav .headerlinkdiv .countrybuttondiv a button {
     width: 60px;
     height: 25px;
     border-radius: 20px;
     opacity: .9;
     border: none;
 }
-.header1 nav .headerlinkdiv .countrybuttondiv a button .circle{
+
+.header1 nav .headerlinkdiv .countrybuttondiv a button .circle {
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -67,20 +75,24 @@
     background-repeat: no-repeat;
     margin-left: 10px;
 }
-.header1 nav .headerlinkdiv .countrybuttondiv a button .circle span{
+
+.header1 nav .headerlinkdiv .countrybuttondiv a button .circle span {
     margin-left: 20px;
 }
-.header1 nav .headerlinkdiv a{
+
+.header1 nav .headerlinkdiv a {
     color: #fae5da;
     font-size: 13px;
     font-weight: 600;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     text-decoration: none;
 }
-.header1 a{
+
+.header1 a {
     text-decoration: none;
 }
-.header1 a .skew-et{
+
+.header1 a .skew-et {
     width: 250px;
     height: 49px;
     margin-left: -30px;
@@ -91,46 +103,56 @@
     justify-content: center;
     text-decoration: none;
 }
-.header1 a .skew-et:hover{
+
+.header1 a .skew-et:hover {
+    transition: .3s;
     background-color: #8b2e00;
 }
-.header1 a .skew-et div{
+
+.header1 a .skew-et div {
     transform: skewX(27deg);
     font-size: 14px;
     color: #fae5da;
     font-weight: 600;
     letter-spacing: 1px;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     display: flex;
     align-items: center;
 }
-.header1 a .skew-et div span{
+
+.header1 a .skew-et div span {
     margin-left: 10px;
 }
 
-.header2{
+.header2 {
     width: 100%;
     height: 100px;
 }
-.header2 nav{
+
+.header2 nav {
     display: flex;
     height: 100%;
     align-items: center;
 }
-.header2 nav ul{
+
+.header2 nav ul {
     height: 100px;
     width: 850px;
     display: flex;
     align-items: center;
-    justify-content: space-between  ;
+    justify-content: space-between;
     list-style-type: none;
 }
-.header2 nav ul li{
+
+.header2 nav ul li {
     padding-bottom: 30px;
     margin-top: 40px;
+    justify-content: center;
+    text-align: center;
 }
-.header2 nav ul li a{
-    font-family: acumin-pro,sans-serif;
+
+.header2 nav ul li a {
+    font-family: acumin-pro, sans-serif;
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5;
@@ -138,30 +160,45 @@
     text-align: left;
     background-color: transparent;
     text-decoration: none;
-    padding-left: 35px;
+    padding: 0px 10px;
 }
-.header2 nav ul li:nth-of-type(1){
+
+.header2 nav ul li:nth-of-type(1) {
     margin-left: 75px;
 }
-.header2 nav ul li:nth-of-type(1):hover{
+
+.header2 nav ul li:nth-of-type(1):hover {
     border: none;
 }
-.header2 nav ul li:hover{
+
+.header2 nav ul li:hover {
     border-bottom: medium solid #dd4f05;
 }
-.header2 nav ul li a:hover{
+
+.header2 nav ul li a:hover {
     color: #dd4f05;
 }
-.header2 nav img{
+
+.header2 nav img {
     margin-left: 250px;
     margin-top: -30px;
     height: 100px;
     width: 100px;
 }
-#home{
-    color: #dd4f05;
+@keyframes slide-down {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
 }
-.personaldropdowncont{
+.header2 nav ul li:nth-last-of-type(1):hover {
+    border-bottom: none;
+}
+
+.personaldropdowncont {
     height: 600px;
     width: 800px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
@@ -171,21 +208,24 @@
     visibility: hidden;
     z-index: 1;
 }
-.personaldropdowncont .items{
+
+.personaldropdowncont .items {
     height: 100%;
     width: 35%;
     background-color: white;
 }
-.personaldropdowncont .itemsitems{
+
+.personaldropdowncont .itemsitems {
     width: 65%;
     height: 100%;
     background-color: rgb(221, 221, 221);
 }
-.personaldropdowncont .items div{
+
+.personaldropdowncont .items div {
     width: 80%;
     border-bottom: thin solid rgba(0, 0, 0, 0.315);
     margin: auto;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     color: #5e5e5e;
     font-size: 1em;
     font-weight: 600;
@@ -193,15 +233,20 @@
     background-color: transparent;
     padding-bottom: 10px;
     padding-top: 30px;
+    text-align: left;
 }
-header nav ul .personal:hover .personaldropdowncont{
+
+header nav ul .personal:hover .personaldropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+        animation-duration: .5s;
 }
-.personaldropdowncont .items div:hover{
+
+.personaldropdowncont .items div:hover {
     background-color: #5e5e5e11;
 }
 
-.businessdropdowncont{
+.businessdropdowncont {
     height: 600px;
     width: 800px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
@@ -212,21 +257,24 @@ header nav ul .personal:hover .personaldropdowncont{
     margin-left: -112px;
     z-index: 1;
 }
-.businessdropdowncont .items{
+
+.businessdropdowncont .items {
     height: 100%;
     width: 35%;
     background-color: white;
 }
-.businessdropdowncont .itemsitems{
+
+.businessdropdowncont .itemsitems {
     width: 65%;
     height: 100%;
     background-color: rgb(221, 221, 221);
 }
-.businessdropdowncont .items div{
+
+.businessdropdowncont .items div {
     width: 80%;
     border-bottom: thin solid rgba(0, 0, 0, 0.315);
     margin: auto;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5;
@@ -234,14 +282,20 @@ header nav ul .personal:hover .personaldropdowncont{
     background-color: transparent;
     padding-top: 20px;
     padding-bottom: 10px;
+    text-align: left;
 }
-header nav ul .business:hover .businessdropdowncont{
+
+header nav ul .business:hover .businessdropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+        animation-duration: .5s;
 }
-.businessdropdowncont .items div:hover{
+
+.businessdropdowncont .items div:hover {
     background-color: #5e5e5e11;
 }
-.aboutusdropdowncont{
+
+.aboutusdropdowncont {
     height: 600px;
     width: 800px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
@@ -252,21 +306,24 @@ header nav ul .business:hover .businessdropdowncont{
     margin-left: -224px;
     z-index: 1;
 }
-.aboutusdropdowncont .items{
+
+.aboutusdropdowncont .items {
     height: 100%;
     width: 35%;
     background-color: white;
 }
-.aboutusdropdowncont .itemsitems{
+
+.aboutusdropdowncont .itemsitems {
     width: 65%;
     height: 100%;
     background-color: rgb(221, 221, 221);
 }
-.aboutusdropdowncont .items div{
+
+.aboutusdropdowncont .items div {
     width: 80%;
     border-bottom: thin solid rgba(0, 0, 0, 0.315);
     margin: auto;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5;
@@ -274,15 +331,20 @@ header nav ul .business:hover .businessdropdowncont{
     background-color: transparent;
     padding-top: 20px;
     padding-bottom: 10px;
+    text-align: left;
 }
-header nav ul .aboutus:hover .aboutusdropdowncont{
+
+header nav ul .aboutus:hover .aboutusdropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+        animation-duration: .5s;
 }
-.aboutusdropdowncont .items div:hover{
+
+.aboutusdropdowncont .items div:hover {
     background-color: #5e5e5e11;
 }
 
-.investorsrelationdropdowncont{
+.investorsrelationdropdowncont {
     height: 600px;
     width: 800px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.124);
@@ -293,62 +355,75 @@ header nav ul .aboutus:hover .aboutusdropdowncont{
     margin-left: -333px;
     z-index: 1;
 }
-.investorsrelationdropdowncont .items{
+
+.investorsrelationdropdowncont .items {
     height: 100%;
     width: 35%;
     background-color: white;
 }
-.investorsrelationdropdowncont .itemsitems{
+
+.investorsrelationdropdowncont .itemsitems {
     width: 65%;
     height: 100%;
     background-color: rgb(221, 221, 221);
 }
-.investorsrelationdropdowncont .items div{
+
+.investorsrelationdropdowncont .items div {
     width: 80%;
     border-bottom: thin solid rgba(0, 0, 0, 0.315);
     margin: auto;
-    font-family: acumin-pro,sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5;
     color: #5e5e5e;
     background-color: transparent;
-    padding: 20px;
+    padding-top: 20px;
     padding-bottom: 10px;
+    text-align: left;
 }
-header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
+
+header nav ul .investorsrelation:hover .investorsrelationdropdowncont {
     visibility: visible;
+    animation-name: slide-down;
+        animation-duration: .5s;
 }
-.investorsrelationdropdowncont .items div:hover{
+
+.investorsrelationdropdowncont .items div:hover {
     background-color: #5e5e5e11;
 }
 
 /* -----main---- */
 
 
-.home{
-    background-color:whitesmoke;
+.home {
+    background-color: whitesmoke;
     padding-top: 30px;
 }
-.hometop{
+
+.hometop {
     width: 80%;
     display: flex;
     margin: auto;
 }
-.hometop-inner{
+
+.hometop-inner {
     display: flex;
     gap: 1.5em;
     color: #000;
     padding-bottom: 30px;
 }
-.hometop-image{
+
+.hometop-image {
     position: relative;
     padding-bottom: 50px;
 }
-.hometop-image img{
-    width:100%;
+
+.hometop-image img {
+    width: 100%;
 }
-.mediacet{
+
+.mediacet {
     position: absolute;
     top: 50px;
     left: 50px;
@@ -357,10 +432,12 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont{
     background-color: white;
     opacity: 0.9;
 }
-.mediacet span{
+
+.mediacet span {
     color: #dd4f05;
 }
-.home .text-1{
+
+.home .text-1 {
     margin-left: 120px;
     padding: 16px;
     font-size: 16px;
