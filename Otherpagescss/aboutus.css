@@ -4,33 +4,34 @@
     box-sizing: border-box;
 }
 
-.alert {
-    min-height: 150px;
+.headeralert {
+    min-height: 10px;
     width: 100%;
     background-color: rgba(255, 140, 140, 0.089);
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
-.alert h1 {
+.headeralert h1 {
     color: #dd4f05;
-    font-size: 19px;
+    font-size: calc(7px + .7vw);
     font-weight: 700;
     font-family: acumin-pro, sans-serif;
     margin-left: 80px;
     margin-right: 80px;
-    padding-top: 30px;
 }
 
-.alert p {
+.headeralert p {
+    width: 70%;
     font-family: acumin-pro, sans-serif;
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 10px;
-    font-size: 19px;
+    font-size: calc(5px + .7vw);
     line-height: 1.5;
     color: #696f73;
     font-weight: 400;
 }
-
 
 /* header */
 .header1 {
