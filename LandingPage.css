@@ -644,8 +644,7 @@ header nav ul .investorsrelation:hover .investorsrelationdropdowncont {
 }
 
 .carousel-indicators {
-    width: 80%;
-    padding-left: 80%;
+    position: relative;
 }
 
 #carouselExampleCaptions {
